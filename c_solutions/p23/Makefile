@@ -17,7 +17,7 @@ p23: p23.c
 	$(CC) $(CFLAGS) $(DBGFLAGS) $(WARNINGS) $^ 
 
 clean:
-	rm *~
-	rm *.o
-	rm *.gch
-	rm a.out
+	rm -f a.out
+	rm -f *~
+	rm -f *.o
+	rm -f *.gch
