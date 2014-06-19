@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-int msd(size_t n) ;
+size_t msd(size_t n) ;
 
-int msd_power(size_t n ) ;
+size_t  msd_power(size_t n ) ;
 
 size_t my_pow( size_t n, size_t e ) ;
 
@@ -16,13 +16,15 @@ int is_truncatable_right(size_t n, char *sieve ) ;
 
 int is_truncatable_left(size_t n, char *sieve ) ;
 
-int main( int argc, char *argv[] )
+int main() 
 {
 	char *sieve = NULL ;
 
 	size_t limit = 10000000 ;
 
 	size_t i = 8;
+
+	size_t sum = 0 ;
 
 	sieve = realloc(sieve, sizeof(char) * limit ) ;
 
@@ -32,12 +34,15 @@ int main( int argc, char *argv[] )
 	{
 		if( is_truncatable_prime( i, sieve ) )
 		{
+			sum += i ;
+
 			printf("%lu is truncatable\n", i);
 		}
 
 		 ++i ;
 	}
 
+	printf("the sum is %lu\n", sum ) ;
 	return 0 ;
 }
 
@@ -65,10 +70,10 @@ int fill_prime_sieve( char *sieve, size_t limit )
 
 int is_truncatable_prime( size_t n, char *sieve )
 {
-	if(sieve[n] == 0) return 0 ;
-
 	int left_rc = is_truncatable_left(n, sieve) ;
-	int right_rc = is_truncatable_right(n, sieve) ;
+	int right_rc = is_truncatable_right(n, sieve) ; 
+
+	if(sieve[n] == 0) return 0 ;
 
 	return left_rc && right_rc ;
 }
@@ -113,9 +118,9 @@ size_t my_pow(size_t n, size_t e )
 	return rc ;
 }
 
-int msd_power(size_t n )
+size_t msd_power(size_t n )
 {
-	int power = 0 ;
+	size_t power = 0 ;
 
 	while( n > 9 )
 	{
@@ -127,7 +132,7 @@ int msd_power(size_t n )
 	return power ;
 }
 
-int msd(size_t n)
+size_t msd(size_t n)
 {
 	while( n > 9 )
 	{
