@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <stdint.h>
 
+#define extra_printing 0
+
 uint16_t is_divisior(uint16_t n, uint16_t d) ;
 
 uint16_t divisor_sum( uint16_t n ) ;
@@ -41,12 +43,16 @@ int main(int argc, char *argv[] )
 
 			abundant[abundant_size - 1] = i ;
 
+#if extra_printing
 			printf("adding abundant number %d\n", i );
+#endif
 		}
 
 	}
 
+#if extra_printing
 	printf("beginning search for sums of abundant numbers\n");
+#endif
 
 	/* first loop for finding the numbers that cannot be written as hte sum of two nonabundant numbers */
 
@@ -69,11 +75,12 @@ int main(int argc, char *argv[] )
 
 				if( sum_2_abundants == i )
 				{
+#if extra_printing
 					printf("%d = %d + %d \n"    ,
 							i           ,
 							abundant[j] ,
 							abundant[k] );
-
+#endif
 					found_flag = 1 ;
 
 					/*set found flag to break out*/
