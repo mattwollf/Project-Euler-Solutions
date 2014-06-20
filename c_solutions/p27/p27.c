@@ -64,8 +64,8 @@ int main()
 		}
 	}
 
-	printf("a=%d, b=%d, max primes is %d\n", 
-			max_a, max_b, max_consec_primes) ;
+	printf("a=%d, b=%d, a * b is %d, max primes is %d\n", 
+			max_a, max_b, max_a * max_b, max_consec_primes) ;
 	return 0 ;
 }
 
@@ -81,7 +81,7 @@ int fill_prime_sieve( char *sieve, size_t limit )
 	{
 		if(sieve [i] == 0 ) continue ;
 
-		for( j = i * 2  ; j < limit ; j += i )
+		for( j = i * i  ; j < limit ; j += i )
 		{
 			sieve[j] = 0 ;
 		}
