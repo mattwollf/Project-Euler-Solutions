@@ -58,7 +58,7 @@ int fill_prime_sieve( char *sieve, size_t limit )
 	{
 		if(sieve [i] == 0 ) continue ;
 
-		for( j = i * 2  ; j < limit ; j += i )
+		for( j = i * i  ; j < limit ; j += i )
 		{
 			sieve[j] = 0 ;
 		}
