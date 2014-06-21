@@ -10,14 +10,16 @@ WARNINGS = -Wall -Wextra -Wfloat-equal -Wundef -Wshadow -Wpointer-arith \
         -Wconversion -Wunreachable-code -Wformat=2 -Winit-self \
         -Wuninitialized -Werror-implicit-function-declaration
 
+EXECUTABLE = p23
 
-all: p23
+all: $(EXECUTABLE)
 
-p23: p23.c
-	$(CC) $(CFLAGS) $(DBGFLAGS) $(WARNINGS) $^ 
+$(EXECUTABLE): p23.c
+	$(CC) $(CFLAGS) $(DBGFLAGS) $(WARNINGS) $^ -o $@
 
 clean:
 	rm -f a.out
 	rm -f *~
 	rm -f *.o
 	rm -f *.gch
+	rm -f $(EXECUTABLE)
