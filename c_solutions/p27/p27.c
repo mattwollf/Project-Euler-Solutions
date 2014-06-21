@@ -3,7 +3,7 @@
 #include <stdint.h>
 
 #define LIM() 100000000
-#define extra_printing 0 
+#define extra_printing 1 
 
 int32_t simple_abs_val(int32_t n) ;
 
@@ -42,30 +42,25 @@ int main()
 				++ n ;
 			}
 
-#if extra_printing
-			if(n > 1 )
-				printf("iteration a=%d, b=%d had %d "
-						"consecutive primes\n",
-						 a, b, curr_consec_primes ) ;
-#endif
-
 			if( curr_consec_primes >
 				max_consec_primes )
 			{
+				max_consec_primes = curr_consec_primes ;
+				max_a = a ;
+				max_b = b ;
+
 #if extra_printing
 				printf("replacing: consecutive primes: "
 						"%d, a: %d b: %d\n",
 						n, a, b ) ;
 #endif
-				max_consec_primes = curr_consec_primes ;
-				max_a = a ;
-				max_b = b ;
 			}
 		}
 	}
 
 	printf("a=%d, b=%d, a * b is %d, max primes is %d\n", 
 			max_a, max_b, max_a * max_b, max_consec_primes) ;
+
 	return 0 ;
 }
 
@@ -92,7 +87,9 @@ int fill_prime_sieve( char *sieve, size_t limit )
 }
 int32_t prime_quadratic( int32_t n, int16_t a, int16_t b, char *sieve ) 
 {
-	return sieve[simple_abs_val(n * n + a * n + b)] ; 
+	int32_t index = simple_abs_val(n * n + a * n + b ) ;
+
+	return sieve[index] ;
 }
 
 int32_t simple_abs_val(int32_t n)
