@@ -15,7 +15,7 @@ EXECUTABLE = p27
 all: $(EXECUTABLE)
 
 $(EXECUTABLE): p27.c
-	$(CC) $(CFLAGS) $(DBGFLAGS) $(WARNINGS) $^ 
+	$(CC) $(CFLAGS) $(DBGFLAGS) $(WARNINGS) $^ -o $@
 
 clean:
 	rm -f a.out
