@@ -1,4 +1,3 @@
-import Data.List
 import Data.Char (ord)
 import Data.List.Split
 
