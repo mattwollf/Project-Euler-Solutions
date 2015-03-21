@@ -1,3 +1,5 @@
+import Data.List
+
 digList :: Integer -> [Integer]
 digList n = digList' [] n where
         digList' xs n
@@ -11,9 +13,10 @@ fromList :: [Integer] -> Integer
 --fromList (x:[]) = x
 --fromList (x:xs) = x * (10 ^ length xs) + fromList xs
 	
-fromList xs = fromList' 0 xs where
-	fromList' n (x:[]) = n + x
-    fromList' n (x:xs) = fromList' (n + x * (10 ^ length xs)) xs
+fromList xs = fromList' 0 xs
+	where fromList' n (x:xs)
+			| null xs = n + x
+			| otherwise = fromList' (n + x * (10 ^ length xs)) xs
 		
 primes :: [Integer]
 primes = sieve (2 : 3 : possible [1..]) where
@@ -26,3 +29,12 @@ isPrime n = shortCircuit || (not $ any divisible $ takeWhile inRangeOf primes) w
     divisible y = n `mod` y == 0
     inRangeOf y = y * y <= n
     
+isNPandigital :: Integer -> Bool
+
+isNPandigital n = isnp 1 (digList n) where
+	isnp i xs
+		| i `elem` xs = isnp (i + 1) $ delete i xs
+		| i == (1 + (toInteger .length . digList) n) = null xs
+		| otherwise = False
+
+

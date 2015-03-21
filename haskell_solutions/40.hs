@@ -11,9 +11,10 @@ fromList :: [Integer] -> Integer
 --fromList (x:[]) = x
 --fromList (x:xs) = x * (10 ^ length xs) + fromList xs
 
-fromList xs = fromList' 0 xs where
-	fromList' n (x:[]) = n + x
-        fromList' n (x:xs) = fromList' (n + x * (10 ^ length xs)) xs
+fromList xs = fromList' 0 xs 
+	where fromList' n (x:xs)
+			| null xs = n + x
+			| otherwise = fromList' (n + x * (10 ^ length xs)) xs
 		
 ans :: Integer -> [Integer]
 ans n = digList n ++ ans (succ n)

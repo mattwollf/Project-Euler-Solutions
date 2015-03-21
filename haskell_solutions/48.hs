@@ -13,8 +13,8 @@ fromList :: [Integer] -> Integer
 
 fromList xs = fromList' 0 xs where
 	fromList' n (x:[]) = n + x
-        fromList' n (x:xs) = fromList' (n + x) xs
+        fromList' n (x:xs) = fromList' (n + x * 10 ^ length xs) xs
 
-swag = [x ^ x | x <- [1..999]]
+lst = [x ^ x | x <- [1..999]]
 
-answer = drop ((fromIntegral $ length $ digList $ sum swag) - 10) $ digList $ sum swag
+answer = drop ((fromIntegral $ length $ digList $ sum lst) - 10) $ digList $ sum lst
