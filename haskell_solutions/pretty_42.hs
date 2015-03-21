@@ -1,8 +1,7 @@
 import Data.Char (ord)
-import Data.List.Split
+import Data.List.Split (splitOn)
 
 triangles :: [Integer]
-
 triangles = [ (n * n + n) `div` 2 | n <- [1..]]
 
 isTriangle :: Integer -> Bool
