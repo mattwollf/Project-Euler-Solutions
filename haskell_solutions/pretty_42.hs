@@ -17,11 +17,11 @@ isLetter c = and [n > 0,n < 27] where
 
 main = do
     s <- readFile "p042_words.txt"
-    print $ numberOf $ trianglesIn $ asciiSumsOf $ theWordsIn s where
+    print $ numberOf $ trianglesIn $ asciiSumsOf $ wordsIn s where
         numberOf = length
         trianglesIn = filter isTriangle
         asciiSumsOf = map asciiSum
         letters = map (filter isLetter)
         asciiSum xs = sum $ map letterPosition xs
-        theWordsIn xs = letters $ splitOn "," xs
+        wordsIn xs = letters $ splitOn "," xs
         
