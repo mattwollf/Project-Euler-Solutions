@@ -1,6 +1,7 @@
 #include "vector.h"
 
 #include <stdlib.h>
+#include <string.h>
 #include <stddef.h>
 
 #define       ARRAY(x) ((x) ->       array)
@@ -46,6 +47,57 @@ int mwv_init(mwVector **v, size_t member_size)
         return 0;
 }
 
+int mwv_destroy(mwVector **v)
+{
+        if(!v)
+                return -1;
+
+        mwVector *mwv = *v;
+
+        free(ARRAY(mwv));
+
+        free((void *) mwv);
+
+        return 0;
+}
+
+int mwv_resize(mwVector *v, size_t new_size)
+{
+        void *new_array = realloc(ARRAY(v), new_size * MEMBER_SIZE(v));
+
+        if(!new_array)
+                return -1;
+
+        ARRAY(v) = new_array;
+
+        CAP(v) = new_size;
+
+        if(new_size < MEMBERS(v))
+        {
+                MEMBERS(v) = new_size;
+        }
+
+        return 0;
+}
+
+int mwv_push_back(mwVector *v, void *data)
+{
+        if(!v)
+                return -1;
+        
+        if(CAP(v) <= MEMBERS(v) + 1)
+        {
+                mwv_resize(v, CAP(v) << 1);
+        }
+
+        memcpy(ARRAY(v) + MEMBERS(v) * MEMBER_SIZE(v), 
+               data, 
+               MEMBER_SIZE(v));
+        
+        MEMBERS(v)++;
+
+        return 0;
+}
 
 #undef ARRAY
 #undef CAP

@@ -17,11 +17,11 @@ int mwv_init(mwVector **v, size_t member_size);
  * 
  * @param v vector to be destroyed
  */
-int mwv_destroy(mwVector *v);
+int mwv_destroy(mwVector **v);
 
 int mwv_empty(mwVector *v);
 
-int mwv_resize(mwVector *v);
+int mwv_resize(mwVector *v, size_t new_size);
 
 int mwv_shrink_to_fit(mwVector *v);
 
