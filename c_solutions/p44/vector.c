@@ -99,6 +99,26 @@ int mwv_push_back(mwVector *v, void *data)
         return 0;
 }
 
+int mwv_shrink_to_fit(mwVector *v)
+{
+        if(!v)
+                return -1;
+
+        void * rc;
+        size_t shrunk_size = MEMBERS(v) + 1;
+
+        if(CAP(v) > shrunk_size)
+        {
+                rc = realloc( ARRAY(v), shrunk_size + 1);
+
+                if(!rc)
+                        return -1
+
+                CAP(v) = shrunk_size;
+        }
+        return 0;
+}
+
 #undef ARRAY
 #undef CAP
 #undef MEMBERS
