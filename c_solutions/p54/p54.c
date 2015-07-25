@@ -54,7 +54,7 @@ int hasFourKind(hand h)
                 vals[i] = (h.c)[i].v;
 
         memset(testFirst, vals[0], 4);
-        memset(testFirst, vals[4], 4);
+        memset(testLast, vals[4], 4);
 
         return 0 == memcmp(testFirst,  vals,   sizeof(char) * 4) ||
                0 == memcmp( testLast,  vals+1, sizeof(char) * 4) ;
