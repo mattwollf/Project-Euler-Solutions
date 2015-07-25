@@ -30,16 +30,12 @@ typedef struct hand{
 
         card c[5];
         hand_type t;
-        int high_card;
 
 } hand;
 
 int cmp_cards(const void *a, const void *b)
 {
-        card ca = *(card*)a;
-        card cb = *(card*)b;
-
-        return ca.v - cb.v;
+        return ((card*)a)->v - ((card*)a)->v;
 }
 
 void sortHand(hand *h)
@@ -51,13 +47,17 @@ int hasFourKind(hand h)
 {
         char vals[5];
 
-        const char *testFirst ;
-        char testLast[4];
+        char testFirst[4];
+        char  testLast[4];
 
         for(int i = 0; i < 5; i++)
-                vals[i] = (h.c)[i];
+                vals[i] = (h.c)[i].v;
 
+        memset(testFirst, vals[0], 4);
+        memset(testFirst, vals[4], 4);
 
+        return 0 == memcmp(testFirst,  vals,   sizeof(char) * 4) ||
+               0 == memcmp( testLast,  vals+1, sizeof(char) * 4) ;
 }
 
 int hasFlush(hand h)
