@@ -43,7 +43,21 @@ void sortHand(hand *h)
         qsort(h->c, 5, sizeof(card), cmp_cards);
 }
 
-int hasFourKind(hand h)
+int hasFourKindManual(hand h)
+{
+        uint8_t first = (h.c)[0].v;
+        uint8_t last  = (h.c)[4].v;
+
+        for(int i = 1; i < 4; i++)
+                first &= (h.c)[i].v;
+
+        for(int i = 1; i < 5; i++)
+                last &= (h.c)[i].v;
+
+        return (h.c)[0].v == first || (h.c)[4].v == last;
+}
+
+int hasFourKindMemcpy(hand h)
 {
         char vals[5];
 
