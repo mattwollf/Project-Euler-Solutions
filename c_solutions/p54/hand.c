@@ -84,6 +84,8 @@ int hasFourKindMemcpy(hand *h)
                0 == memcmp( testLast,  vals+1, sizeof(char) * 4) ;
 }
 
+
+
 int hasFlush(hand *h)
 {
         const suit initial = (h->c)[0].s;
@@ -133,4 +135,71 @@ int cmp_cards(const void *a, const void *b)
 void sortHand(hand *h)
 {
         qsort(h->c, 5, sizeof(card), cmp_cards);
+}
+
+size_t strchrcnt(const char *str, char c)
+{
+        unsigned int count = 0;
+
+        char *last_c = strchr(str,c);
+
+        while(last_c != NULL)
+        {
+                count++;
+                last_c = strchr(last_c, c);
+        }
+
+        return count;
+}
+
+size_t strchrcntManual(const char *str, char c)
+{
+        const size_t   len = strlen(str);
+              size_t count = 0;
+
+        for(size_t i = 0; i < len; i++)
+                if(str[i] == c)
+                        count++;
+
+        return count;
+}
+
+int hasFullHouse(hand *h)
+{
+        return hasThreeKind(h) && hasPair(h);
+}
+
+int hasThreeKind(hand *h)
+{
+        return 0;
+}
+
+int hasPair(hand *h)
+{
+        return 0;
+}
+
+int cntsets(const hand *h, int setsize)
+{
+        int found = 0;
+        const int lim = 5 - setsize + 1;
+
+        uint8_t vals[5];
+
+        for(int i = 0; i < 5; i++)
+                vals[i] = (h->c)[i].v;
+
+        for(int i = 0; i < lim; i++)
+        {
+                int cur_size = 1;
+
+                for(int k = i+1; k-i < setsize; k++)
+                {
+                        if(vals[i] == vals[k])
+                                cur_size++;
+                }
+                if(cur_size == setsize)
+                        found++;
+        }
+        return found;
 }
