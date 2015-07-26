@@ -28,10 +28,7 @@ int main()
         p1 = strToHand(buffer);
         p2 = strToHand(buffer + 15);
 
-        hand *flushTest = strToHand("5H 4H 7H 8H TH");
-
-        printf("%d\n", hasFlush(flushTest));
-
         fclose(file);
+
         return 0;
 }
