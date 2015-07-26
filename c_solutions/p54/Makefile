@@ -22,7 +22,7 @@ OBJS= $(SOURCES:.c=.o)
 
 EXEC= p54
 
-TESTS=
+TESTS= handtest
 
 all: $(SOURCES) $(EXEC) $(TESTS)
 
