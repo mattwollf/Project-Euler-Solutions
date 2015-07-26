@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <assert.h>
 
 #include <hand.h>
 
@@ -53,21 +54,65 @@ hand *strToHand(const char str[static 15])
 
         return h;
 }
-int hasFourKindManual(hand *h)
+
+void setHandType(hand *h)
 {
-        uint8_t first = (h->c)[0].v;
-        uint8_t last  = (h->c)[4].v;
+        assert(h != NULL);
 
-        for(int i = 1; i < 4; i++)
-                first &= (h->c)[i].v;
+        if(hasRoyalFlush(h))
+        {
+                h->t = ROYAL_FLUSH;
+        }
 
-        for(int i = 1; i < 5; i++)
-                last &= (h->c)[i].v;
-
-        return (h->c)[0].v == first || (h->c)[4].v == last;
+        else if(hasStraightFlush(h))
+        {
+                h->t = STRAIGHT_FLUSH;
+        }
+        else if(hasFourKind(h))
+        {
+                h->t = FOUR_KIND;
+        }
+        else if(hasFullHouse(h))
+        {
+                h->t = FULL_HOUSE;
+        }
+        else if(hasFlush(h))
+        {
+                h->t = FLUSH;
+        }
+        else if(hasStraight(h))
+        {
+                h->t = STRAIGHT;
+        }
+        else if(hasThreeKind(h))
+        {
+                h->t = THREE_KIND;
+        }
+        else if(hasTwoPair(h))
+        {
+                h->t = TWO_PAIR;
+        }
+        else if(hasPair(h))
+        {
+                h->t = PAIR;
+        }
+        else
+        {
+                h->t = HIGH_CARD;
+        }
 }
 
-int hasFourKindMemcpy(hand *h)
+int hasFourKind(const hand *h)
+{
+        return hasFourKindManual(h);
+}
+
+int hasFourKindManual(const hand *h)
+{
+        return cntsets(h,4) > 0;
+}
+
+int hasFourKindMemcpy(const hand *h)
 {
         uint8_t vals[5];
 
@@ -84,23 +129,26 @@ int hasFourKindMemcpy(hand *h)
                0 == memcmp( testLast,  vals+1, sizeof(char) * 4) ;
 }
 
+int hasTwoPair(const hand *h)
+{
+        return cntsets(h, 2) == 2 && cntsets(h,3) == 0;
+}
 
-
-int hasFlush(hand *h)
+int hasFlush(const hand *h)
 {
         const suit initial = (h->c)[0].s;
 
         suit test = initial;
 
         for(int i = 1; i < 5; i++)
-                test = test | (h->c)[i].s;
+                test = test & (h->c)[i].s;
 
         return initial == test;
 }
 
-int hasStraight(hand *h)
+int hasStraight(const hand *h)
 {
-        card *cards = h->c;
+        const card *cards = h->c;
 
         uint8_t init = cards[0].v;
 
@@ -110,14 +158,14 @@ int hasStraight(hand *h)
                ++init == cards[4].v;
 }
 
-int hasStraightFlush(hand *h)
+int hasStraightFlush(const hand *h)
 {
         return hasStraight(h) && hasFlush(h);
 }
 
-int hasRoyalFlush(hand *h)
+int hasRoyalFlush(const hand *h)
 {
-        card *cards = h->c;
+        const card *cards = h->c;
 
         return hasFlush(h)      &&
                cards[0].v == 1  &&
@@ -164,19 +212,19 @@ size_t strchrcntManual(const char *str, char c)
         return count;
 }
 
-int hasFullHouse(hand *h)
+int hasFullHouse(const hand *h)
 {
-        return hasThreeKind(h) && hasPair(h);
+        return cntsets(h, 2) == 3;
 }
 
-int hasThreeKind(hand *h)
+int hasThreeKind(const hand *h)
 {
-        return 0;
+        return cntsets(h,3) == 1;
 }
 
-int hasPair(hand *h)
+int hasPair(const hand *h)
 {
-        return 0;
+        return cntsets(h,2) == 1;
 }
 
 int cntsets(const hand *h, int setsize)

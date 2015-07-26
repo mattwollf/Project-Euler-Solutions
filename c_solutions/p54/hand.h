@@ -27,21 +27,25 @@ typedef struct hand{
 
         card c[5];
         hand_type t;
+        uint8_t type_card;
 } hand;
 
 hand *strToHand(const char str[static 15]);
 
-int hasPair          (hand *h);
-int hasTwoPair       (hand *h);
-int hasThreeKind     (hand *h);
-int hasFourKindManual(hand *h);
-int hasFourKindMemcpy(hand *h);
-int hasFlush         (hand *h);
-int hasFullHouse     (hand *h);
-int hasStraight      (hand *h);
-int hasStraightFlush (hand *h);
-int hasRoyalFlush    (hand *h);
+int hasPair          (const hand *h);
+int hasTwoPair       (const hand *h);
+int hasThreeKind     (const hand *h);
+int hasStraight      (const hand *h);
+int hasFlush         (const hand *h);
+int hasFullHouse     (const hand *h);
+int hasFourKind      (const hand *h);
+int hasFourKindManual(const hand *h);
+int hasFourKindMemcpy(const hand *h);
+int hasStraightFlush (const hand *h);
+int hasRoyalFlush    (const hand *h);
+
 void sortHand        (hand *h);
+void setHandType     (hand *h);
 
 int cntsets(const hand *h, int setsize);
 
