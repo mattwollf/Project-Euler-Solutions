@@ -28,6 +28,8 @@ int main()
         p1 = strToHand(buffer);
         p2 = strToHand(buffer + 15);
 
+        printf("%d\n", cmp_hand(p1, p2));
+
         fclose(file);
 
         return 0;
