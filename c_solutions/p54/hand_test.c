@@ -26,6 +26,8 @@ hand *fourKindHand;
 hand *straightFlushHand;
 hand *royalFlushHand;
 
+int cntsetsTest(int rc, hand *h, int sizetest, const char *passStr, const char *failStr);
+
 int testHasPair();
 int testHasTwoPair();
 int testHasThreeKind();
@@ -176,23 +178,23 @@ int testcntsets()
                 printf(fnFailStr, "two pair hand", 2);
         }
 
+        numTests++;
+        passedTests += cntsetsTest(1,fullHouseHand,3,"PASSED cntsets with full house hand, setsize=3","FAILED cntsets with full house hand, setsize=3");
 
 
         printf(finishedSetStr, "cntsets()",passedTests, numTests);
 
         return passedTests;
 }
-#if 0
-int cntsetsTest(int rc, hand *testHand, int setsize, const char *failStr, const char *passStr)
+
+int cntsetsTest(int rc, hand *testHand, int setsize, const char *passStr, const char *failStr)
 {
         if(cntsets(testHand, setsize) == rc)
         {
-                printf(passStr, "two pair hand", 4);
+                printf(passStr);
+                return 1;
         }
-        else
-        {
-                printf(fnFailStr, "two pair hand", 4);
-        }
+        else printf(failStr);
 
+        return 0;
 }
-#endif
