@@ -57,69 +57,10 @@ hand *strToHand(const char str[static 15])
         return h;
 }
 
-hand_type findHandType(hand *h)
-{
-        if(h->t != NOT_FOUND)
-                return h->t;
-
-        if(hasPair(h))
-        {
-                h->t = PAIR;
-                return PAIR;
-        }
-        else if(hasTwoPair(h))
-        {
-                h->t = TWO_PAIR;
-                return TWO_PAIR;
-        }
-        else if(hasThreeKind(h))
-        {
-                h->t = THREE_KIND;
-                return THREE_KIND;
-        }
-        else if(hasStraight(h))
-        {
-                h->t = STRAIGHT;
-                return STRAIGHT;
-        }
-        else if(hasFlush(h))
-        {
-                h->t = FLUSH;
-                return FLUSH;
-        }
-        else if(hasFullHouse(h))
-        {
-                h->t = FULL_HOUSE;
-                return FULL_HOUSE;
-        }
-        else if(hasFourKind(h))
-        {
-                h->t = FOUR_KIND;
-                return FOUR_KIND;
-
-        }
-        else if(hasStraightFlush(h))
-        {
-                h->t = STRAIGHT_FLUSH;
-                return STRAIGHT_FLUSH;
-
-        }
-        else if(hasRoyalFlush(h))
-        {
-                h->t = ROYAL_FLUSH;
-                return ROYAL_FLUSH;
-        }
-        else
-        {
-                h->t = HIGH_CARD;
-                return HIGH_CARD;
-        }
-}
-
 int cmp_hand(const void *a, const void *b)
 {
-        const hand_type type_a = findHandType((hand *)a);
-        const hand_type type_b = findHandType((hand *)b);
+        setHandType(a);
+        setHandType(b);
 
         if(type_a == type_b)
         {
@@ -134,6 +75,9 @@ int cmp_hand(const void *a, const void *b)
 void setHandType(hand *h)
 {
         assert(h != NULL);
+
+        if(h->t != NOT_FOUND)
+                return;
 
         if(hasRoyalFlush(h))
         {
@@ -291,7 +235,7 @@ size_t strchrcntManual(const char *str, char c)
 int hasFullHouse(const hand *h)
 {
         return cntsets(h, 2) == 3 &&
-                cntsets(h, 3) == 1 ;
+                cntsets(h, 3) == 1  ;
 }
 
 int hasThreeKind(const hand *h)

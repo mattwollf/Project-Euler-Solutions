@@ -47,6 +47,8 @@ int hasFourKindMemcpy(const hand *h);
 int hasStraightFlush (const hand *h);
 int hasRoyalFlush    (const hand *h);
 
+hand_type findHandType(hand *h);
+
 void sortHand        (hand *h);
 void setHandType     (hand *h);
 
