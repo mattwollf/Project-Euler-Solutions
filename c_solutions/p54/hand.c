@@ -214,12 +214,13 @@ size_t strchrcntManual(const char *str, char c)
 
 int hasFullHouse(const hand *h)
 {
-        return cntsets(h, 2) == 3;
+        return cntsets(h, 2) == 3 &&
+               cntsets(h, 3) == 1 ;
 }
 
 int hasThreeKind(const hand *h)
 {
-        return cntsets(h,3) == 1;
+        return cntsets(h,3) == 1 && cntsets(h,2) == 2;
 }
 
 int hasPair(const hand *h)
