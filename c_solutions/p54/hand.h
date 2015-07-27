@@ -3,9 +3,10 @@
 
 #include <stdint.h>
 
-typedef enum {CLUB=1,SPADE=2,HEART=4,DIAMOND=8} suit;
+typedef enum {CLUB=1,SPADE=2,HEART=3,DIAMOND=4} suit;
 
-typedef enum {HIGH_CARD=0,
+typedef enum {NOT_FOUND=-1,
+              HIGH_CARD=0,
               PAIR=1,
               TWO_PAIR=2,
               THREE_KIND=3,
@@ -31,6 +32,8 @@ typedef struct hand{
 } hand;
 
 hand *strToHand(const char str[static 15]);
+
+int cmp_hand(const void *a, const void *b);
 
 int hasPair          (const hand *h);
 int hasTwoPair       (const hand *h);
