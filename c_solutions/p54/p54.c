@@ -9,7 +9,7 @@
 
 int main()
 {
-        char *name = "poker.txt";
+        const char *name = "poker.txt";
 
         FILE *file = NULL;
 
@@ -19,18 +19,40 @@ int main()
 
         assert(file != NULL);
 
-        char buffer[30];
+        char buffer[31];
 
-        fgets(buffer, 30, file);
+        int p1wins = 0;
+        int handNumber = 0;
+        while( fgets(buffer, 31, file)!= NULL)
+        {
+                p1 = strToHand(buffer);
+                p2 = strToHand(buffer + 15);
 
-        printf("%s\n", buffer);
+                int cmp_result = cmp_hands(p1,p2);
 
-        p1 = strToHand(buffer);
-        p2 = strToHand(buffer + 15);
+                handNumber++;
+                if(p1->t == FLUSH ||
+                   p2->t ==  FLUSH)
+                {
+                        char *p1Str = handToStr(p1);
+                        char *p2Str = handToStr(p2);
 
-        printf("%d\n", cmp_hand(p1, p2));
+                        printf("hand number: %d. winner:%d\n", handNumber, cmp_result);
+                        printf("player 1: %s\n", p1Str);
+                        printf("player 2: %s\n", p2Str);
+
+                        free(p1Str);
+                        free(p2Str);
+                }
+                if(cmp_result > 0)
+                        p1wins++;
+
+                free(p1);
+                free(p2);
+        }
 
         fclose(file);
 
+        printf("p1wins: %d\n", p1wins);
         return 0;
 }

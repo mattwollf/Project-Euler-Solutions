@@ -6,70 +6,229 @@
 
 #include <hand.h>
 
+uint_fast8_t pairCardValue(const hand * h)
+{
+        card *cards = h->c;
+
+        for(int i = 0; i < 4; i++)
+        {
+                if(cards[i].v == cards[i+1].v)
+                        return cards[i].v;
+        }
+
+        printf("ERROR no pair found in hand assumed to have pair\n");
+        return 0;
+}
+
+uint_fast8_t twoPairCardValue(const hand *restrict h)
+{
+        return (h->c)[3].v;
+}
+
+uint_fast8_t threeKindCardValue(const hand *restrict h)
+{
+        return (h->c)[2].v;
+}
+
+uint_fast8_t straightCardValue(const hand *restrict h)
+{
+        return(h->c)[4].v;
+}
+
+uint_fast8_t flushCardValue(const hand *restrict h)
+{
+        return(h->c)[4].v;
+}
+
+uint_fast8_t fourKindCardValue(const hand *restrict h)
+{
+        return (h->c)[3].v;
+}
+
+void setHandTypeCard(hand *restrict h)
+{
+        switch(h->t)
+        {
+                case HIGH_CARD:
+                        h->type_card = (h->c)[4].v;
+                        break;
+                case PAIR:
+                        h->type_card = pairCardValue(h);
+                        break;
+                case TWO_PAIR:
+                        h->type_card = twoPairCardValue(h);
+                        break;
+                case THREE_KIND:
+                        h->type_card = threeKindCardValue(h);
+                        break;
+                case STRAIGHT:
+                        h->type_card = straightCardValue(h);
+                        break;
+                case FLUSH:
+                        h->type_card = flushCardValue(h);
+                        break;
+                case FULL_HOUSE:
+                        h->type_card = threeKindCardValue(h);
+                        break;
+                case FOUR_KIND:
+                        h->type_card = fourKindCardValue(h);
+                        break;
+                case STRAIGHT_FLUSH:
+                        h->type_card = straightCardValue(h);
+                        break;
+                case ROYAL_FLUSH:
+                        h->type_card = straightCardValue(h);
+                        break;
+                case NOT_FOUND:
+                default:
+                printf("ERROR bad hand type %d\n", h->t);
+        }
+}
+
+uint_fast8_t charToValue(char c)
+{
+        if(isdigit(c))
+                return (uint_fast8_t)(c - '0');
+        else if(c == 'A')
+                return 14;
+        else if(c == 'T')
+                return 10;
+        else if(c == 'J')
+                return 11;
+        else if(c == 'Q')
+                return 12;
+        else if(c == 'K')
+                return 13;
+
+        printf("ERROR received %c\n", c);
+        return 0;
+}
+
+char valueToChar(uint_fast8_t v)
+{
+        if(v < 10)
+                return (char)(v + '0');
+        else if(v == 10)
+                return 'T';
+        else if(v == 11)
+                return 'J';
+        else if(v == 12)
+                return 'Q';
+        else if(v == 13)
+                return 'K';
+        else if(v == 14)
+                return 'A';
+
+        printf("ERROR received %hhu\n", v);
+        return -1;
+}
+
+suit charToSuit(char c)
+{
+        switch(c)
+        {
+                case 'C':
+                case 'S':
+                case 'H':
+                case 'D':
+                        return c;
+                default:
+                        printf("ERROR received bad suit %c\n",c);
+                        return -1;
+        }
+}
+
+char suitToChar(suit s)
+{
+        switch(s)
+        {
+                case SPADE:
+                case CLUB:
+                case DIAMOND:
+                case HEART:
+                case ERROR:
+                        return (char)s;
+                default:
+                        return -1;
+        }
+}
+
 hand *strToHand(const char str[static 15])
 {
         hand *h = malloc(sizeof(hand));
 
-        card cards[5];
+        card *cards = malloc(sizeof(card) * 5);
 
         for(int i = 0; i < 15; i += 3)
         {
                 int c_i = i/3;
-                if(isdigit(str[i]))
-                        cards[c_i].v = str[i] - 48;
-                else if(str[i] == 'A')
-                        cards[c_i].v = 14;
-                else if(str[i] == 'T')
-                        cards[c_i].v = 10;
-                else if(str[i] == 'J')
-                        cards[c_i].v = 11;
-                else if(str[i] == 'Q')
-                        cards[c_i].v = 12;
-                else if(str[i] == 'K')
-                        cards[c_i].v = 13;
-                else printf("ERROR received %c\n", str[i]);
 
-                switch(str[i+1])
-                {
-                        case 'C':
-                                cards[c_i].s = CLUB;
-                                break;
-                        case 'S':
-                                cards[c_i].s = SPADE;
-                                break;
-                        case 'H':
-                                cards[c_i].s = HEART;
-                                break;
-                        case 'D':
-                                cards[c_i].s = DIAMOND;
-                                break;
-                        default:
-                                printf("ERROR received bad suit %c\n",str[i+1]);
-                }
-        }
+                cards[c_i].v = charToValue(str[i  ]);
+                cards[c_i].s = charToSuit( str[i+1]);
+       }
 
-        memcpy(h->c, cards, sizeof(card) * 5);
+        h->c = cards;
 
         sortHand(h);
 
-        h->t = findHandType(h);
+        h->t = NOT_FOUND;
+        setHandType(h);
+        setHandTypeCard(h);
 
         return h;
 }
 
-int cmp_hand(const void *a, const void *b)
+char * handToStr(const hand *h)
 {
-        setHandType(a);
-        setHandType(b);
+        char *str = malloc(sizeof(char) * 31);
 
-        if(type_a == type_b)
+        //set every value in string to space
+        memset(str, 32,29);
+
+        str[30] = '\n';
+
+        for(int i = 0; i < 5; i++)
         {
-                return (((const hand *)a)->c[4]).v -
-                       (((const hand *)b)->c[4]).v ;
+                card c = (h->c)[i];
+                const int str_i = i * 3;
 
+                str[str_i  ] = valueToChar(c.v);
+                str[str_i+1] =  suitToChar(c.s);
         }
-        else
-                return type_a - type_b;
+
+        return str;
+}
+uint_fast8_t *get_val_array(const hand *h)
+{
+        uint_fast8_t *vals = malloc(sizeof(uint_fast8_t) * 5);
+
+        for(int i = 0; i != 5; i++)
+        {
+                vals[i] = (h->c)[i].v;
+        }
+
+        return vals;
+}
+
+int cmp_hands(const void *a, const void *b)
+{
+        const hand *ha = (const hand*)a;
+        const hand *hb = (const hand*)b;
+
+        const hand_type t_a = ((const hand *)a)->t;
+        const hand_type t_b = ((const hand *)b)->t;
+
+        const uint_fast8_t tca = ((const hand *)a)->type_card;
+        const uint_fast8_t tcb = ((const hand *)b)->type_card;
+
+        if(t_a == t_b)
+        {
+                if(tca == tcb)
+                        return (ha->c)[4].v - (hb->c)[4].v;
+                return tca - tcb;
+        }
+
+        return t_a - t_b;
 }
 
 void setHandType(hand *h)
@@ -83,7 +242,6 @@ void setHandType(hand *h)
         {
                 h->t = ROYAL_FLUSH;
         }
-
         else if(hasStraightFlush(h))
         {
                 h->t = STRAIGHT_FLUSH;
@@ -134,7 +292,7 @@ int hasFourKindManual(const hand *h)
 
 int hasFourKindMemcpy(const hand *h)
 {
-        uint8_t vals[5];
+        uint_fast8_t vals[5];
 
         char testFirst[4];
         char  testLast[4];
@@ -143,9 +301,9 @@ int hasFourKindMemcpy(const hand *h)
                 vals[i] = (h->c)[i].v;
 
         memset(testFirst, vals[0], 4);
-        memset(testLast, vals[4], 4);
+        memset(testLast , vals[4], 4);
 
-        return 0 == memcmp(testFirst,  vals,   sizeof(char) * 4) ||
+        return  0 == memcmp(testFirst,  vals,   sizeof(char) * 4) ||
                 0 == memcmp( testLast,  vals+1, sizeof(char) * 4) ;
 }
 
@@ -161,16 +319,36 @@ int hasFlush(const hand *h)
         suit test = initial;
 
         for(int i = 1; i < 5; i++)
-                test = test & (h->c)[i].s;
+                if(test != (h->c)[i].s)
+                        return 0;
 
-        return initial == test;
+        return 1;
 }
 
 int hasStraight(const hand *h)
 {
         const card *cards = h->c;
 
-        uint8_t init = cards[0].v;
+        uint_fast8_t init = cards[0].v;
+
+        uint_fast8_t *vals = get_val_array(h);
+
+        uint_fast8_t edge_case_straight[5];
+
+
+        edge_case_straight[0] = 2;
+        edge_case_straight[1] = 3;
+        edge_case_straight[2] = 4;
+        edge_case_straight[3] = 5;
+        edge_case_straight[4] = 14;
+
+        int rc = memcmp(edge_case_straight,
+                        vals, sizeof(uint_fast8_t) * 5);
+
+        free(vals);
+
+        if(rc == 0)
+               return 1;
 
         return ++init == cards[1].v &&
                 ++init == cards[2].v &&
@@ -234,7 +412,7 @@ size_t strchrcntManual(const char *str, char c)
 
 int hasFullHouse(const hand *h)
 {
-        return cntsets(h, 2) == 3 &&
+        return  cntsets(h, 2) == 3 &&
                 cntsets(h, 3) == 1  ;
 }
 
@@ -253,7 +431,7 @@ int cntsets(const hand *h, int setsize)
         int found = 0;
         const int lim = 5 - setsize + 1;
 
-        uint8_t vals[5];
+        uint_fast8_t vals[5];
 
         for(int i = 0; i < 5; i++)
                 vals[i] = (h->c)[i].v;

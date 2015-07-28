@@ -3,7 +3,12 @@
 
 #include <stdint.h>
 
-typedef enum {CLUB=1,SPADE=2,HEART=3,DIAMOND=4} suit;
+typedef enum {ERROR=-1,
+              CLUB='C',
+              SPADE='S',
+              HEART='H',
+              DIAMOND='D'
+} suit;
 
 typedef enum {NOT_FOUND=-1,
               HIGH_CARD=0,
@@ -15,25 +20,31 @@ typedef enum {NOT_FOUND=-1,
               FULL_HOUSE=6,
               FOUR_KIND=7,
               STRAIGHT_FLUSH=8,
-              ROYAL_FLUSH=9}
-        hand_type;
+              ROYAL_FLUSH=9
+} hand_type;
 
 typedef struct card{
 
         suit s;
-        uint8_t v;
+        uint_fast8_t v;
 } card;
 
 typedef struct hand{
 
-        card c[5];
+        card *c;
         hand_type t;
-        uint8_t type_card;
+        uint_fast8_t type_card;
 } hand;
 
 hand *strToHand(const char str[static 15]);
+char * handToStr(const hand *h);
 
-int cmp_hand(const void *a, const void *b);
+uint_fast8_t pairCardValue(const hand *h);
+uint_fast8_t twoPairCardValue(const hand *h);
+uint_fast8_t threeKindCardValue(const hand *h);
+uint_fast8_t straightCardValue(const hand *h);
+uint_fast8_t flushCardValue(const hand *h);
+uint_fast8_t fourKindCardValue(const hand *h);
 
 int hasPair          (const hand *h);
 int hasTwoPair       (const hand *h);
@@ -47,16 +58,18 @@ int hasFourKindMemcpy(const hand *h);
 int hasStraightFlush (const hand *h);
 int hasRoyalFlush    (const hand *h);
 
-hand_type findHandType(hand *h);
-
 void sortHand        (hand *h);
 void setHandType     (hand *h);
+void setHandTypeCard (hand *h);
 
 int cntsets(const hand *h, int setsize);
+
+uint8_t *get_val_array(const hand *h);
 
 size_t strchrcnt      (const char *str, char c);
 size_t strchrcntManual(const char *str, char c);
 
 int cmp_cards(const void *a, const void *b);
+int cmp_hands(const void *a, const void *b);
 
 #endif
