@@ -1,0 +1,91 @@
+hand number: 40. winner:4
+player 1: 7C 9C JC JS KC               
+player 2: 3H 3C 7D KD AS               
+hand number: 52. winner:-5
+player 1: 3S 9D JC KH AC               
+player 2: 3C 5S 9S 9C JS               
+hand number: 72. winner:-5
+player 1: 8C 9S JH QD KD               
+player 2: 2C 5C 7C JS QS               
+hand number: 82. winner:-4
+player 1: 6C 6S 7D TH AD               
+player 2: 2H 4H 6H 8H KH               
+hand number: 109. winner:-5
+player 1: 2S 3S 5H 9H JH               
+player 2: 2C 6S 7S KS AS               
+hand number: 172. winner:5
+player 1: 4C 7C 9S JS AS               
+player 2: 7H 9H TS JC KS               
+hand number: 186. winner:-5
+player 1: 2D 3C 4S 5S QD               
+player 2: 4C 5C 6S 6C KC               
+hand number: 187. winner:-5
+player 1: 2D 5D 8S TS KH               
+player 2: 4C 7C 9C 9S AS               
+hand number: 216. winner:4
+player 1: 4C 8C 9S TC KC               
+player 2: 3C 6S JS JC AH               
+hand number: 240. winner:-5
+player 1: 4S 6S 8D TD QH               
+player 2: 5C 6C 8S TC KC               
+hand number: 243. winner:4
+player 1: 4C 8C TS JS QC               
+player 2: 3D 5D 7D 7S JH               
+hand number: 280. winner:-4
+player 1: 4S 5S 5H JC QH               
+player 2: 2C 2S 9S JS AC               
+hand number: 311. winner:4
+player 1: 2C 3C 5S 9S QS               
+player 2: 4D 4S 5D KD AC               
+hand number: 324. winner:-4
+player 1: 2S 3C 4C KD KH               
+player 2: 2C 6S 7C TS AC               
+hand number: 355. winner:1
+player 1: 2C 5S 7C JC AS               
+player 2: 5H 6C 7D 8S 9C               
+hand number: 377. winner:4
+player 1: 4C 8C JC KC AS               
+player 2: TH QC QD KH AH               
+hand number: 424. winner:5
+player 1: 2C 4C 5C 7C 9C               
+player 2: 4D 5D QH KD AS               
+hand number: 430. winner:3
+player 1: 8C 9C TS TC AS               
+player 2: 6H 6C 8S 8D 9D               
+hand number: 475. winner:-4
+player 1: 2C 5S 7C 7D 8S               
+player 2: 6C 7S 8C JS KS               
+hand number: 501. winner:-5
+player 1: 2H 8C TD JH KD               
+player 2: 2C 5C 7S JS QS               
+hand number: 514. winner:-4
+player 1: 2C 2S 5H 8S TD               
+player 2: 6C TC TS KC AS               
+hand number: 669. winner:-5
+player 1: 3D 4H 8H 9S QC               
+player 2: 2C 3S 5C JC KS               
+hand number: 722. winner:-3
+player 1: 7C 8S 8C JS JD               
+player 2: 4C 4S 6S 9C AC               
+hand number: 727. winner:5
+player 1: 2C 5S 7C 8S JC               
+player 2: 2H 3H 5D QC KC               
+hand number: 730. winner:-5
+player 1: 2D 5D 7C TC QS               
+player 2: 6C JS QC KC AC               
+hand number: 768. winner:-5
+player 1: 3H 5D JS KH AD               
+player 2: 5C 9S KC AS AC               
+hand number: 864. winner:5
+player 1: 2C 3C 4C 8C 9S               
+player 2: 2D 4H 8D JH KS               
+hand number: 912. winner:4
+player 1: 2C 5C 7S JS AS               
+player 2: 2H 5S TC AH AD               
+hand number: 939. winner:-4
+player 1: 7D JC QH QS AS               
+player 2: 2C 4C 5C 5S KC               
+hand number: 972. winner:5
+player 1: 3C 4S 7S 8S TS               
+player 2: 2S 4D 5C 6H 7C               
+p1wins: 378

@@ -316,10 +316,8 @@ int hasFlush(const hand *h)
 {
         const suit initial = (h->c)[0].s;
 
-        suit test = initial;
-
         for(int i = 1; i < 5; i++)
-                if(test != (h->c)[i].s)
+                if(initial != (h->c)[i].s)
                         return 0;
 
         return 1;

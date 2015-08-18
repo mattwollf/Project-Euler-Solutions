@@ -16,13 +16,13 @@ CFLAGS= $(WARNINGS) -std=c11 -pedantic -c \
 
 LDFLAGS=
 
-SOURCES= p54.c hand.c
+SOURCES= p76.c vector.c
 
 OBJS= $(SOURCES:.c=.o)
 
-EXEC= p54
+EXEC= p76
 
-TESTS= handtest
+TESTS=
 
 all: $(SOURCES) $(TESTS) $(EXEC)
 

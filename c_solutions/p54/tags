@@ -1,0 +1,71 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS= $(WARNINGS) -std=c11 -pedantic -c \\$/;"	m
+CLUB	hand.h	/^              CLUB='C',$/;"	e	enum:__anon1
+DBGFLAGS	Makefile	/^DBGFLAGS= -ggdb3$/;"	m
+DIAMOND	hand.h	/^              DIAMOND='D'$/;"	e	enum:__anon1
+ERROR	hand.h	/^typedef enum {ERROR=-1,$/;"	e	enum:__anon1
+EXEC	Makefile	/^EXEC= p54$/;"	m
+FLUSH	hand.h	/^              FLUSH=5,$/;"	e	enum:__anon2
+FOUR_KIND	hand.h	/^              FOUR_KIND=7,$/;"	e	enum:__anon2
+FULL_HOUSE	hand.h	/^              FULL_HOUSE=6,$/;"	e	enum:__anon2
+HAND_H	hand.h	2;"	d
+HEART	hand.h	/^              HEART='H',$/;"	e	enum:__anon1
+HIGH_CARD	hand.h	/^              HIGH_CARD=0,$/;"	e	enum:__anon2
+INCLUDE	Makefile	/^INCLUDE= -I.$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS=$/;"	m
+NOT_FOUND	hand.h	/^typedef enum {NOT_FOUND=-1,$/;"	e	enum:__anon2
+OBJS	Makefile	/^OBJS= $(SOURCES:.c=.o)$/;"	m
+PAIR	hand.h	/^              PAIR=1,$/;"	e	enum:__anon2
+ROYAL_FLUSH	hand.h	/^              ROYAL_FLUSH=9$/;"	e	enum:__anon2
+SOURCES	Makefile	/^SOURCES= p54.c hand.c$/;"	m
+SPADE	hand.h	/^              SPADE='S',$/;"	e	enum:__anon1
+STRAIGHT	hand.h	/^              STRAIGHT=4,$/;"	e	enum:__anon2
+STRAIGHT_FLUSH	hand.h	/^              STRAIGHT_FLUSH=8,$/;"	e	enum:__anon2
+TESTS	Makefile	/^TESTS= handtest$/;"	m
+THREE_KIND	hand.h	/^              THREE_KIND=3,$/;"	e	enum:__anon2
+TWO_PAIR	hand.h	/^              TWO_PAIR=2,$/;"	e	enum:__anon2
+WARNINGS	Makefile	/^WARNINGS= -Wall -Wextra -Wfloat-equal -Wundef -Wshadow -Wpointer-arith \\$/;"	m
+c	hand.h	/^        card *c;$/;"	m	struct:hand
+card	hand.h	/^typedef struct card{$/;"	s
+card	hand.h	/^} card;$/;"	t	typeref:struct:card
+charToSuit	hand.c	/^suit charToSuit(char c)$/;"	f
+charToValue	hand.c	/^uint_fast8_t charToValue(char c)$/;"	f
+cmp_cards	hand.c	/^int cmp_cards(const void *a, const void *b)$/;"	f
+cmp_hand	hand.c	/^int cmp_hand(const void *a, const void *b)$/;"	f
+cntsets	hand.c	/^int cntsets(const hand *h, int setsize)$/;"	f
+get_val_array	hand.c	/^uint_fast8_t *get_val_array(const hand *h)$/;"	f
+hand	hand.h	/^typedef struct hand{$/;"	s
+hand	hand.h	/^} hand;$/;"	t	typeref:struct:hand
+handToStr	hand.c	/^char * handToStr(const hand *h)$/;"	f
+hand_type	hand.h	/^} hand_type;$/;"	t	typeref:enum:__anon2
+hasFlush	hand.c	/^int hasFlush(const hand *h)$/;"	f
+hasFourKind	hand.c	/^int hasFourKind(const hand *h)$/;"	f
+hasFourKindManual	hand.c	/^int hasFourKindManual(const hand *h)$/;"	f
+hasFourKindMemcpy	hand.c	/^int hasFourKindMemcpy(const hand *h)$/;"	f
+hasFullHouse	hand.c	/^int hasFullHouse(const hand *h)$/;"	f
+hasPair	hand.c	/^int hasPair(const hand *h)$/;"	f
+hasRoyalFlush	hand.c	/^int hasRoyalFlush(const hand *h)$/;"	f
+hasStraight	hand.c	/^int hasStraight(const hand *h)$/;"	f
+hasStraightFlush	hand.c	/^int hasStraightFlush(const hand *h)$/;"	f
+hasThreeKind	hand.c	/^int hasThreeKind(const hand *h)$/;"	f
+hasTwoPair	hand.c	/^int hasTwoPair(const hand *h)$/;"	f
+main	hand_test.c	/^int main()$/;"	f
+main	p54.c	/^int main()$/;"	f
+s	hand.h	/^        suit s;$/;"	m	struct:card
+setHandType	hand.c	/^void setHandType(hand *h)$/;"	f
+sortHand	hand.c	/^void sortHand(hand *h)$/;"	f
+strToHand	hand.c	/^hand *strToHand(const char str[static 15])$/;"	f
+strchrcnt	hand.c	/^size_t strchrcnt(const char *str, char c)$/;"	f
+strchrcntManual	hand.c	/^size_t strchrcntManual(const char *str, char c)$/;"	f
+suit	hand.h	/^} suit;$/;"	t	typeref:enum:__anon1
+suitToChar	hand.c	/^char suitToChar(suit s)$/;"	f
+t	hand.h	/^        hand_type t;$/;"	m	struct:hand
+type_card	hand.h	/^        uint8_t type_card;$/;"	m	struct:hand
+v	hand.h	/^        uint8_t v;$/;"	m	struct:card
+valueToChar	hand.c	/^char valueToChar(uint_fast8_t v)$/;"	f
