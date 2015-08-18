@@ -3,7 +3,7 @@ spirals = helper 1 2 1 where
         helper current step corner = next : helper next nextStep nextCorner where
                 next = current + step
                 nextStep = if corner /= 0 then step else step + 2
-                nextCorner = if corner == 3 then 0  else corner + 1
+                nextCorner = if corner /= 3 then corner + 1 else 0
 
 primes :: [Integer]
 primes = sieve (2 : 3 : possible [1..]) where
@@ -23,5 +23,9 @@ spiralPrimes = [ x | x <- spirals, isPrime x]
 squareSpirals :: Int -> [Integer]
 squareSpirals n = take ( 4*   (n`div`2)) spirals
 
+driver :: [(Int, Float)]
+driver = helper 26241 where
+        helper sideLength = (sideLength, (fromIntegral (length (filter isPrime $ squareSpirals sideLength)) / (fromIntegral (length $ squareSpirals sideLength)))) : (helper $ sideLength + 2)
+
 main = do
-        print $ take 8 spirals
+        print $ (takeWhile (\(a,b) -> b > 0.999) driver)
