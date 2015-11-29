@@ -4,27 +4,23 @@ primes = sieve (2 : 3 : possible [1..]) where
      possible (x:xs) = 6*x-1 : 6*x+1 : possible xs
 
 isPrime :: Integer -> Bool
-isPrime n = shortCircuit || (not $ any divisible $ takeWhile inRangeOf primes) where
+isPrime n = shortCircuit || not ( any divisible $ takeWhile inRangeOf primes) where
     shortCircuit = elem n [2,3] || (n < 25 && ((n-1) `mod` 6 == 0 || (n+1) `mod` 6 == 0))
     divisible y = n `mod` y == 0
     inRangeOf y = y * y <= n
 
 digList :: Integer -> [Integer]
 digList n = digList' [] n where
-        digList' xs n
-                | n < 10        = n : xs
+        digList' xs a
+                | a < 10        = a : xs
                 | otherwise = digList' (lsd : xs) nxt
                 where
-                    lsd = n `mod` 10
-                    nxt = n `div` 10
+                    lsd = a `mod` 10
+                    nxt = a `div` 10
 
 fromList :: [Integer] -> Integer
 fromList xs = fromList' 0 xs where
-	fromList' n (x:[]) = n + x
-        fromList' n (x:xs) = fromList' (n + x * (10 ^ length xs)) xs
+    fromList' n [x] = n + x
+    fromList' n (x:xs) = fromList' (n + x * (10 ^ length xs)) xs
 
-replaceDigits:: Integer -> Integer -> Integer
-replaceDigits test digits = rD test 0 where
-	rD n i
-	   | i < digits = 
-	   | 
+main = print 5

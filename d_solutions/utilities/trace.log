@@ -1,0 +1,365 @@
+------------------
+	0	0	0
+------------------
+	0	0	0
+------------------
+	    0	
+	0	0	0
+------------------
+ Timer Is 	0	0	0
+------------------
+Tim	0	0	0
+------------------
+Timer Is 3	0	0	0
+------------------
+Timer Is 3579545 T	0	0	0
+------------------
+Timer Is 3579545 Ticks/Sec, Times are in Microsecs ========	0	0	0
+------------------
+	149978	_D17FactorLookupTable17FactorLookupTable6__ctorMFxlZC17FactorLookupTable17FactorLookupTable
+	355509	_D17FactorLookupTable17FactorLookupTable11findFactorsMFxlZv
+	1150820	Tim
+_D17FactorLookupTable17FactorLookupTable11findFactorsMFxlZv	1656307	81278017767	35029168340
+	1749625033	_D3std9algorithm9searching12__T7canFindZ17__T7canFindTAlTlZ7canFindFNaNbNiNfAllZb
+	149967	_D17FactorLookupTable17FactorLookupTable14__T7noDupesTlZ7noDupesMFNaNbNfxAlZAl
+	355509	_D17FactorLookupTable17FactorLookupTable11findFactorsMFxlZv
+------------------
+	149967	_D17FactorLookupTable17FactorLookupTable11findFactorsMFxlZv
+	3201333	Tim
+_D17FactorLookupTable17FactorLookupTable14__T7noDupesTlZ7noDupesMFNaNbNfxAlZAl	3351300	676601599	511843455
+	2329772	_D3std9algorithm9searching12__T7canFindZ17__T7canFindTAlTlZ7canFindFNaNbNiNfAllZb
+------------------
+	   14	_Dmain
+_D17FactorLookupTable17FactorLookupTable6__ctorMFxlZC17FactorLookupTable17FactorLookupTable	14	78514192746	-2930219493
+	149978	_D17FactorLookupTable17FactorLookupTable11findFactorsMFxlZv
+------------------
+	7185712	_D3std9algorithm7sorting112__T23optimisticInsertionSortS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ23optimisticInsertionSortFNaNbNiNfAlZv
+	1826904	_D3std9algorithm7sorting96__T8isSortedS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ8isSortedFNaNbNiNfAlZb
+	37362	_D3std9algorithm7sorting96__T8getPivotS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ8getPivotFNaNbNiNfAlZm
+	713643	_D3std9algorithm7sorting102__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ13quickSortImplFNaNbNiNfAlmZv
+	 4508	_D3std9algorithm10comparison12__T3minTmTmZ3minFNaNbNiNfmmZm
+	89998	_Dmain
+	39999	_D17FactorLookupTable17FactorLookupTable11findFactorsMFxlZv
+	134508	Timer Is 3
+_D3std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z18__T9binaryFunTlTlZ9binaryFunFNaNbNiNfKlKlZb	10032634	5871758	5871758
+------------------
+	7086410280	_D3std9algorithm9searching33__T4findVAyaa6_61203d3d2062TAlTlZ4findFNaNbNiNfAllZAl
+_D3std10functional51__T9binaryFunVAyaa6_61203d3d2062VAyaa1_61VAyaa1_62Z18__T9binaryFunTlTlZ9binaryFunFNaNbNiNfKlKlZb	7086410280	3277908921	3277908921
+------------------
+	247812	_D3std5array14__T7overlapTvZ7overlapFNaNbNiNeANgvANgvZANgv
+	50002	_Dmain
+_D3std5array14__T7overlapTvZ7overlapFNaNbNeANgvANgvZ3maxFNaNbNiNfPNgvPNgvZPNgv	297814	144283	144283
+------------------
+	247812	_D3std5array14__T7overlapTvZ7overlapFNaNbNiNeANgvANgvZANgv
+_D3std5array14__T7overlapTvZ7overlapFNaNbNeANgvANgvZ3minFNaNbNiNfPNgvPNgvZPNgv	247812	178369	178369
+------------------
+	247812	_D3std9exception25__T11doesPointToTAlTAlTvZ11doesPointToFNaNbNiNeKxAlKxAlZb
+_D3std5array14__T7overlapTvZ7overlapFNaNbNiNeANgvANgvZANgv	247812	2505324	2182672
+	247812	_D3std5array14__T7overlapTvZ7overlapFNaNbNeANgvANgvZ3maxFNaNbNiNfPNgvPNgvZPNgv
+	247812	_D3std5array14__T7overlapTvZ7overlapFNaNbNeANgvANgvZ3minFNaNbNiNfPNgvPNgvZPNgv
+------------------
+	1751954805	_D3std9algorithm9searching12__T7canFindZ17__T7canFindTAlTlZ7canFindFNaNbNiNfAllZb
+	199976	_D3std9algorithm7sorting96__T8isSortedS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ8isSortedFNaNbNiNfAlZb
+_D3std5range10primitives12__T5emptyTlZ5emptyFNaNbNdNiNfxAlZb	1752154781	751172155	751172155
+------------------
+	    6	_D3std5stdio4File38__T5writeTS4core4time12TickDurationTaZ5writeMFNfS4core4time12TickDurationaZv
+_D3std5range10primitives46__T3putTS3std5stdio4File17LockingTextWriterTaZ3putFNbNiNfKS3std5stdio4File17LockingTextWriteraZv	6	374947	533
+	   12	_D3std5range10primitives48__T5doPutTS3std5stdio4File17LockingTextWriterTaZ5doPutFNbNiNfKS3std5stdio4File17LockingTextWriterKaZv
+------------------
+	    6	_D3std6format60__T14formatUnsignedTS3std5stdio4File17LockingTextWriterTmTaZ14formatUnsignedFNfS3std5stdio4File17LockingTextWritermKS3std6format18__T10FormatSpecTaZ10FormatSpeckbZv
+_D3std5range10primitives47__T3putTS3std5stdio4File17LockingTextWriterTAaZ3putFNfKS3std5stdio4File17LockingTextWriterAaZv	6	3344	401
+	    6	_D3std5range10primitives49__T5doPutTS3std5stdio4File17LockingTextWriterTAaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAaZv
+------------------
+	   12	_D3std6format18__T10FormatSpecTaZ10FormatSpec59__T17writeUpToNextSpecTS3std5stdio4File17LockingTextWriterZ17writeUpToNextSpecMFNfS3std5stdio4File17LockingTextWriterZb
+_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAxaZ3putFNfKS3std5stdio4File17LockingTextWriterAxaZv	12	12488	627
+	   12	_D3std5range10primitives50__T5doPutTS3std5stdio4File17LockingTextWriterTAxaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAxaZv
+------------------
+	   12	_D3std6format81__T11formatValueTS3std5stdio4File17LockingTextWriterTS4core4time12TickDurationTaZ11formatValueFNfS3std5stdio4File17LockingTextWriterKS4core4time12TickDurationKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAyaZ3putFNfKS3std5stdio4File17LockingTextWriterAyaZv	12	185449	671
+	   24	_D3std5range10primitives50__T5doPutTS3std5stdio4File17LockingTextWriterTAyaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAyaZv
+------------------
+	   12	_D3std5range10primitives46__T3putTS3std5stdio4File17LockingTextWriterTaZ3putFNbNiNfKS3std5stdio4File17LockingTextWriteraZv
+_D3std5range10primitives48__T5doPutTS3std5stdio4File17LockingTextWriterTaZ5doPutFNbNiNfKS3std5stdio4File17LockingTextWriterKaZv	12	374414	549
+	   12	_D3std5stdio4File17LockingTextWriter10__T3putTaZ3putMFNbNiNfaZv
+------------------
+	    6	_D3std5range10primitives47__T3putTS3std5stdio4File17LockingTextWriterTAaZ3putFNfKS3std5stdio4File17LockingTextWriterAaZv
+_D3std5range10primitives49__T5doPutTS3std5stdio4File17LockingTextWriterTAaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAaZv	6	2943	391
+	    6	_D3std5stdio4File17LockingTextWriter11__T3putTAaZ3putMFNfAaZv
+------------------
+	   12	_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAxaZ3putFNfKS3std5stdio4File17LockingTextWriterAxaZv
+_D3std5range10primitives50__T5doPutTS3std5stdio4File17LockingTextWriterTAxaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAxaZv	12	11861	546
+	   12	_D3std5stdio4File17LockingTextWriter12__T3putTAxaZ3putMFNfAxaZv
+------------------
+	   24	_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAyaZ3putFNfKS3std5stdio4File17LockingTextWriterAyaZv
+_D3std5range10primitives50__T5doPutTS3std5stdio4File17LockingTextWriterTAyaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAyaZv	24	184778	479
+	   24	_D3std5stdio4File17LockingTextWriter12__T3putTAyaZ3putMFNfAyaZv
+------------------
+	199976	_D3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange6__ctorMFNaNbNcNiNfAlZS3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange
+_D3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange15dbgVerifySortedMFNaNbNiNfZv	199976	198561	198561
+------------------
+	199976	_D3std5range38__T12assumeSortedVAyaa5_61203c2062TAlZ12assumeSortedFNaNbNiNfAlZS3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange
+_D3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange6__ctorMFNaNbNcNiNfAlZS3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange	199976	851558	652997
+	199976	_D3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange15dbgVerifySortedMFNaNbNiNfZv
+------------------
+	199976	_D4test14__T7factorsTlZ7factorsFNaNbxlZAl
+_D3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange7releaseMFNaNbNiZAl	199976	13365924	682388
+	199976	_D3std9algorithm8mutation12__T4moveTAlZ4moveFNaNbNiKAlZAl
+------------------
+	199976	_D3std9algorithm7sorting70__T4sortVAyaa5_61203c2062VE3std9algorithm8mutation12SwapStrategyi0TAlZ4sortFNaNbNiNfAlZS3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange
+_D3std5range38__T12assumeSortedVAyaa5_61203c2062TAlZ12assumeSortedFNaNbNiNfAlZS3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange	199976	1967121	1115563
+	199976	_D3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange6__ctorMFNaNbNcNiNfAlZS3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange
+------------------
+	   12	_Dmain
+_D3std5stdio38__T7writelnTS4core4time12TickDurationZ7writelnFNfS4core4time12TickDurationZv	12	433814	6313
+	    6	_D3std5stdio4File38__T5writeTS4core4time12TickDurationTaZ5writeMFNfS4core4time12TickDurationaZv
+------------------
+	   12	_D3std5range10primitives48__T5doPutTS3std5stdio4File17LockingTextWriterTaZ5doPutFNbNiNfKS3std5stdio4File17LockingTextWriterKaZv
+	    3	_Dmain
+_D3std5stdio4File17LockingTextWriter10__T3putTaZ3putMFNbNiNfaZv	15	373865	1098
+	   12	_D3std5stdio4File17LockingTextWriter10__T3putTaZ3putMFNfaZ12trustedFPUTCFNbNiNeiPS4core4stdc5stdio8_IO_FILEZi
+------------------
+	   12	_D3std5stdio4File17LockingTextWriter10__T3putTaZ3putMFNbNiNfaZv
+_D3std5stdio4File17LockingTextWriter10__T3putTaZ3putMFNfaZ12trustedFPUTCFNbNiNeiPS4core4stdc5stdio8_IO_FILEZi	12	372767	372767
+------------------
+	    6	_D3std5stdio4File17LockingTextWriter11__T3putTAaZ3putMFNfAaZv
+_D3std5stdio4File17LockingTextWriter11__T3putTAaZ3putMFAaZ13trustedFwriteFNbNiNexPvmmPOS4core4stdc5stdio8_IO_FILEZm	6	1923	1923
+------------------
+	    6	_D3std5range10primitives49__T5doPutTS3std5stdio4File17LockingTextWriterTAaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAaZv
+_D3std5stdio4File17LockingTextWriter11__T3putTAaZ3putMFNfAaZv	6	2552	629
+	    6	_D3std5stdio4File17LockingTextWriter11__T3putTAaZ3putMFAaZ13trustedFwriteFNbNiNexPvmmPOS4core4stdc5stdio8_IO_FILEZm
+------------------
+	   12	_D3std5stdio4File17LockingTextWriter12__T3putTAxaZ3putMFNfAxaZv
+_D3std5stdio4File17LockingTextWriter12__T3putTAxaZ3putMFAxaZ13trustedFwriteFNbNiNexPvmmPOS4core4stdc5stdio8_IO_FILEZm	12	10246	10246
+------------------
+	   12	_D3std5range10primitives50__T5doPutTS3std5stdio4File17LockingTextWriterTAxaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAxaZv
+_D3std5stdio4File17LockingTextWriter12__T3putTAxaZ3putMFNfAxaZv	12	11315	1069
+	   12	_D3std5stdio4File17LockingTextWriter12__T3putTAxaZ3putMFAxaZ13trustedFwriteFNbNiNexPvmmPOS4core4stdc5stdio8_IO_FILEZm
+------------------
+	   24	_D3std5stdio4File17LockingTextWriter12__T3putTAyaZ3putMFNfAyaZv
+_D3std5stdio4File17LockingTextWriter12__T3putTAyaZ3putMFAyaZ13trustedFwriteFNbNiNexPvmmPOS4core4stdc5stdio8_IO_FILEZm	24	182640	182640
+------------------
+	   24	_D3std5range10primitives50__T5doPutTS3std5stdio4File17LockingTextWriterTAyaZ5doPutFNfKS3std5stdio4File17LockingTextWriterKAyaZv
+_D3std5stdio4File17LockingTextWriter12__T3putTAyaZ3putMFNfAyaZv	24	184299	1659
+	   24	_D3std5stdio4File17LockingTextWriter12__T3putTAyaZ3putMFAyaZ13trustedFwriteFNbNiNexPvmmPOS4core4stdc5stdio8_IO_FILEZm
+------------------
+	    6	_D3std5stdio38__T7writelnTS4core4time12TickDurationZ7writelnFNfS4core4time12TickDurationZv
+	    3	_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAyaZ3putFNfKS3std5stdio4File17LockingTextWriterAyaZv
+	    3	_D3std5range10primitives46__T3putTS3std5stdio4File17LockingTextWriterTaZ3putFNbNiNfKS3std5stdio4File17LockingTextWriteraZv
+_D3std5stdio4File38__T5writeTS4core4time12TickDurationTaZ5writeMFNfS4core4time12TickDurationaZv	12	427501	48320
+	    6	_D3std6format84__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTS4core4time12TickDurationZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaS4core4time12TickDurationZk
+	    6	_D3std5range10primitives46__T3putTS3std5stdio4File17LockingTextWriterTaZ3putFNbNiNfKS3std5stdio4File17LockingTextWriteraZv
+------------------
+	   12	_D3std6format84__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTS4core4time12TickDurationZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaS4core4time12TickDurationZk
+	    3	_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAyaZ3putFNfKS3std5stdio4File17LockingTextWriterAyaZv
+	    3	_D3std5range10primitives46__T3putTS3std5stdio4File17LockingTextWriterTaZ3putFNbNiNfKS3std5stdio4File17LockingTextWriteraZv
+_D3std6format18__T10FormatSpecTaZ10FormatSpec59__T17writeUpToNextSpecTS3std5stdio4File17LockingTextWriterZ17writeUpToNextSpecMFNfS3std5stdio4File17LockingTextWriterZb	18	40809	28321
+	   12	_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAxaZ3putFNfKS3std5stdio4File17LockingTextWriterAxaZv
+------------------
+	    6	_D3std6format81__T11formatValueTS3std5stdio4File17LockingTextWriterTS4core4time12TickDurationTaZ11formatValueFNfS3std5stdio4File17LockingTextWriterKS4core4time12TickDurationKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std6format56__T22enforceValidFormatSpecTS4core4time12TickDurationTaZ22enforceValidFormatSpecFNaNfKS3std6format18__T10FormatSpecTaZ10FormatSpecZv	6	202	202
+------------------
+	    6	_D3std6format59__T13formatElementTS3std5stdio4File17LockingTextWriterTlTaZ13formatElementFNfS3std5stdio4File17LockingTextWriterKlKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTlTaZ11formatValueFNfS3std5stdio4File17LockingTextWriterlKS3std6format18__T10FormatSpecTaZ10FormatSpecZv	6	16750	3979
+	    6	_D3std6format60__T14formatIntegralTS3std5stdio4File17LockingTextWriterTlTaZ14formatIntegralFNfS3std5stdio4File17LockingTextWriterxlKS3std6format18__T10FormatSpecTaZ10FormatSpeckmZv
+------------------
+	    6	_D3std6format81__T11formatValueTS3std5stdio4File17LockingTextWriterTS4core4time12TickDurationTaZ11formatValueFNfS3std5stdio4File17LockingTextWriterKS4core4time12TickDurationKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std6format59__T13formatElementTS3std5stdio4File17LockingTextWriterTlTaZ13formatElementFNfS3std5stdio4File17LockingTextWriterKlKS3std6format18__T10FormatSpecTaZ10FormatSpecZv	6	18123	1373
+	    6	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTlTaZ11formatValueFNfS3std5stdio4File17LockingTextWriterlKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+------------------
+	    6	_D3std6format57__T11formatValueTS3std5stdio4File17LockingTextWriterTlTaZ11formatValueFNfS3std5stdio4File17LockingTextWriterlKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std6format60__T14formatIntegralTS3std5stdio4File17LockingTextWriterTlTaZ14formatIntegralFNfS3std5stdio4File17LockingTextWriterxlKS3std6format18__T10FormatSpecTaZ10FormatSpeckmZv	6	12771	1425
+	    6	_D3std6format60__T14formatUnsignedTS3std5stdio4File17LockingTextWriterTmTaZ14formatUnsignedFNfS3std5stdio4File17LockingTextWritermKS3std6format18__T10FormatSpecTaZ10FormatSpeckbZv
+------------------
+	    6	_D3std6format60__T14formatIntegralTS3std5stdio4File17LockingTextWriterTlTaZ14formatIntegralFNfS3std5stdio4File17LockingTextWriterxlKS3std6format18__T10FormatSpecTaZ10FormatSpeckmZv
+_D3std6format60__T14formatUnsignedTS3std5stdio4File17LockingTextWriterTmTaZ14formatUnsignedFNfS3std5stdio4File17LockingTextWritermKS3std6format18__T10FormatSpecTaZ10FormatSpeckbZv	6	11346	8002
+	    6	_D3std5range10primitives47__T3putTS3std5stdio4File17LockingTextWriterTAaZ3putFNfKS3std5stdio4File17LockingTextWriterAaZv
+------------------
+	    6	_D3std6format83__T13formatGenericTS3std5stdio4File17LockingTextWriterTS4core4time12TickDurationTaZ13formatGenericFS3std5stdio4File17LockingTextWriterPxvKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+	    6	_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAyaZ3putFNfKS3std5stdio4File17LockingTextWriterAyaZv
+	    6	_D3std6format18__T10FormatSpecTaZ10FormatSpec59__T17writeUpToNextSpecTS3std5stdio4File17LockingTextWriterZ17writeUpToNextSpecMFNfS3std5stdio4File17LockingTextWriterZb
+_D3std6format81__T11formatValueTS3std5stdio4File17LockingTextWriterTS4core4time12TickDurationTaZ11formatValueFNfS3std5stdio4File17LockingTextWriterKS4core4time12TickDurationKS3std6format18__T10FormatSpecTaZ10FormatSpecZv	18	113776	3972
+	    6	_D3std6format56__T22enforceValidFormatSpecTS4core4time12TickDurationTaZ22enforceValidFormatSpecFNaNfKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+	   12	_D3std5range10primitives48__T3putTS3std5stdio4File17LockingTextWriterTAyaZ3putFNfKS3std5stdio4File17LockingTextWriterAyaZv
+	    6	_D3std6format59__T13formatElementTS3std5stdio4File17LockingTextWriterTlTaZ13formatElementFNfS3std5stdio4File17LockingTextWriterKlKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+------------------
+	    6	_D3std6format84__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTS4core4time12TickDurationZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaS4core4time12TickDurationZk
+	    6	_D3std6format18__T10FormatSpecTaZ10FormatSpec59__T17writeUpToNextSpecTS3std5stdio4File17LockingTextWriterZ17writeUpToNextSpecMFNfS3std5stdio4File17LockingTextWriterZb
+_D3std6format83__T13formatGenericTS3std5stdio4File17LockingTextWriterTS4core4time12TickDurationTaZ13formatGenericFS3std5stdio4File17LockingTextWriterPxvKS3std6format18__T10FormatSpecTaZ10FormatSpecZv	12	114861	1085
+	    6	_D3std6format81__T11formatValueTS3std5stdio4File17LockingTextWriterTS4core4time12TickDurationTaZ11formatValueFNfS3std5stdio4File17LockingTextWriterKS4core4time12TickDurationKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+------------------
+	    6	_D3std5stdio4File38__T5writeTS4core4time12TickDurationTaZ5writeMFNfS4core4time12TickDurationaZv
+_D3std6format84__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTS4core4time12TickDurationZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaS4core4time12TickDurationZk	6	152554	10736
+	    6	_D3std6format84__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTS4core4time12TickDurationZ14formattedWriteFS3std5stdio4File17LockingTextWriterxAaS4core4time12TickDurationZ9__lambda5FNaNbNiNeZPFNaNbNfS3std5stdio4File17LockingTextWriterPxvKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+	    6	_D3std6format84__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTS4core4time12TickDurationZ14formattedWriteFS3std5stdio4File17LockingTextWriterxAaS4core4time12TickDurationZ40__T9__lambda6TS4core4time12TickDurationZ9__lambda6FNaNbNiNeKS4core4time12TickDurationZxPv
+	   12	_D3std6format18__T10FormatSpecTaZ10FormatSpec59__T17writeUpToNextSpecTS3std5stdio4File17LockingTextWriterZ17writeUpToNextSpecMFNfS3std5stdio4File17LockingTextWriterZb
+	    6	_D3std6format83__T13formatGenericTS3std5stdio4File17LockingTextWriterTS4core4time12TickDurationTaZ13formatGenericFS3std5stdio4File17LockingTextWriterPxvKS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+------------------
+	    6	_D3std6format84__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTS4core4time12TickDurationZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaS4core4time12TickDurationZk
+_D3std6format84__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTS4core4time12TickDurationZ14formattedWriteFS3std5stdio4File17LockingTextWriterxAaS4core4time12TickDurationZ40__T9__lambda6TS4core4time12TickDurationZ9__lambda6FNaNbNiNeKS4core4time12TickDurationZxPv	6	164	164
+------------------
+	    6	_D3std6format84__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTS4core4time12TickDurationZ14formattedWriteFNfS3std5stdio4File17LockingTextWriterxAaS4core4time12TickDurationZk
+_D3std6format84__T14formattedWriteTS3std5stdio4File17LockingTextWriterTaTS4core4time12TickDurationZ14formattedWriteFS3std5stdio4File17LockingTextWriterxAaS4core4time12TickDurationZ9__lambda5FNaNbNiNeZPFNaNbNfS3std5stdio4File17LockingTextWriterPxvKS3std6format18__T10FormatSpecTaZ10FormatSpecZv	6	19	19
+------------------
+	12454	_D3std9algorithm7sorting102__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ13quickSortImplFNaNbNiNfAlmZv
+	    6	_Dmain
+_D3std9algorithm10comparison12__T3minTmTmZ3minFNaNbNiNfmmZm	12460	77996	53211
+------------------
+	199976	_D3std9algorithm7sorting70__T4sortVAyaa5_61203c2062VE3std9algorithm8mutation12SwapStrategyi0TAlZ4sortFNaNbNiNfAlZS3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange
+	26570	_D3std9algorithm7sorting102__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ13quickSortImplFNaNbNiNfAlmZv
+_D3std9algorithm7sorting102__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ13quickSortImplFNaNbNiNfAlmZv	226546	101135563	7542831
+	219488	_D3std9algorithm7sorting112__T23optimisticInsertionSortS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ23optimisticInsertionSortFNaNbNiNfAlZv
+	12454	_D3std9algorithm7sorting96__T8getPivotS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ8getPivotFNaNbNiNfAlZm
+	90218	_D3std9algorithm8mutation14__T6swapAtTAlZ6swapAtFNaNbNiNfAlmmZv
+	713643	_D3std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z18__T9binaryFunTlTlZ9binaryFunFNaNbNiNfKlKlZb
+	12454	_D3std9algorithm10comparison12__T3minTmTmZ3minFNaNbNiNfmmZm
+	19512	_D3std9algorithm7sorting102__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ13quickSortImplFNaNbNiNfAlmZv
+	 7629	_D3std9algorithm8mutation12__T4swapTAlZ4swapFNaNbNiNeKAlKAlZv
+------------------
+	219488	_D3std9algorithm7sorting102__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ13quickSortImplFNaNbNiNfAlmZv
+_D3std9algorithm7sorting112__T23optimisticInsertionSortS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ23optimisticInsertionSortFNaNbNiNfAlZv	219488	88469661	83964236
+	7185712	_D3std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z18__T9binaryFunTlTlZ9binaryFunFNaNbNiNfKlKlZb
+------------------
+	199976	_D4test14__T7factorsTlZ7factorsFNaNbxlZAl
+_D3std9algorithm7sorting70__T4sortVAyaa5_61203c2062VE3std9algorithm8mutation12SwapStrategyi0TAlZ4sortFNaNbNiNfAlZS3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange	199976	126873839	3453384
+	199976	_D3std9algorithm7sorting102__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ13quickSortImplFNaNbNiNfAlmZv
+	199976	_D3std9algorithm7sorting96__T8isSortedS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ8isSortedFNaNbNiNfAlZb
+	199976	_D3std5range38__T12assumeSortedVAyaa5_61203c2062TAlZ12assumeSortedFNaNbNiNfAlZS3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange
+------------------
+	12454	_D3std9algorithm7sorting102__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ13quickSortImplFNaNbNiNfAlmZv
+_D3std9algorithm7sorting96__T8getPivotS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ8getPivotFNaNbNiNfAlZm	12454	407839	363883
+	37362	_D3std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z18__T9binaryFunTlTlZ9binaryFunFNaNbNiNfKlKlZb
+	 8169	_D3std9algorithm8mutation14__T6swapAtTAlZ6swapAtFNaNbNiNfAlmmZv
+------------------
+	199976	_D3std9algorithm7sorting70__T4sortVAyaa5_61203c2062VE3std9algorithm8mutation12SwapStrategyi0TAlZ4sortFNaNbNiNfAlZS3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange
+	 7058	_D3std9algorithm7sorting102__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ13quickSortImplFNaNbNiNfAlmZv
+	21174	_D3std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z18__T9binaryFunTlTlZ9binaryFunFNaNbNiNfKlKlZb
+_D3std9algorithm7sorting96__T8isSortedS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ8isSortedFNaNbNiNfAlZb	228208	20317771	19177619
+	199976	_D3std5range10primitives12__T5emptyTlZ5emptyFNaNbNdNiNfxAlZb
+	1826904	_D3std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z18__T9binaryFunTlTlZ9binaryFunFNaNbNiNfKlKlZb
+------------------
+	98387	_D3std9algorithm8mutation14__T6swapAtTAlZ6swapAtFNaNbNiNfAlmmZv
+_D3std9algorithm8mutation11__T4swapTlZ4swapFNaNbNiNeKlKlZv	98387	80202	80202
+------------------
+	199976	_D3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange7releaseMFNaNbNiZAl
+_D3std9algorithm8mutation12__T4moveTAlZ4moveFNaNbNiKAlZAl	199976	12683536	831472
+	199976	_D3std9exception25__T11doesPointToTAlTAlTvZ11doesPointToFNaNbNiNeKxAlKxAlZb
+------------------
+	 7629	_D3std9algorithm7sorting102__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ13quickSortImplFNaNbNiNfAlmZv
+_D3std9algorithm8mutation12__T4swapTAlZ4swapFNaNbNiNeKAlKAlZv	7629	2294642	602450
+	30516	_D3std9exception25__T11doesPointToTAlTAlTvZ11doesPointToFNaNbNiNeKxAlKxAlZb
+------------------
+	 8169	_D3std9algorithm7sorting96__T8getPivotS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ8getPivotFNaNbNiNfAlZm
+	90218	_D3std9algorithm7sorting102__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ13quickSortImplFNaNbNiNfAlmZv
+_D3std9algorithm8mutation14__T6swapAtTAlZ6swapAtFNaNbNiNfAlmmZv	98387	366746	286544
+	98387	_D3std9algorithm8mutation11__T4swapTlZ4swapFNaNbNiNeKlKlZv
+------------------
+	1749625033	_D17FactorLookupTable17FactorLookupTable11findFactorsMFxlZv
+	2329772	_D17FactorLookupTable17FactorLookupTable14__T7noDupesTlZ7noDupesMFNaNbNfxAlZAl
+	56764	_D3std9algorithm7sorting102__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ13quickSortImplFNaNbNiNfAlmZv
+	17320	_D3std9exception25__T11doesPointToTAlTAlTvZ11doesPointToFNaNbNiNeKxAlKxAlZb
+	3201333	Timer Is 3579545 T
+	3201333	Timer Is 3579545 Ticks/Sec, Times are in Microsecs ========
+_D3std9algorithm9searching12__T7canFindZ17__T7canFindTAlTlZ7canFindFNaNbNiNfAllZb	1758431555	45737005972	11669827128
+	1751954805	_D3std9algorithm9searching33__T4findVAyaa6_61203d3d2062TAlTlZ4findFNaNbNiNfAllZAl
+	1751954805	_D3std5range10primitives12__T5emptyTlZ5emptyFNaNbNdNiNfxAlZb
+------------------
+	1751954805	_D3std9algorithm9searching12__T7canFindZ17__T7canFindTAlTlZ7canFindFNaNbNiNfAllZb
+	3201333	Tim
+	3201333	Timer Is 3579545 T
+	27971692	im
+_D3std9algorithm9searching33__T4findVAyaa6_61203d3d2062TAlTlZ4findFNaNbNiNfAllZAl	1786329163	33316223012	30038314091
+	7086410280	_D3std10functional51__T9binaryFunVAyaa6_61203d3d2062VAyaa1_61VAyaa1_62Z18__T9binaryFunTlTlZ9binaryFunFNaNbNiNfKlKlZb
+------------------
+	199976	_D3std9algorithm8mutation12__T4moveTAlZ4moveFNaNbNiKAlZAl
+	30516	_D3std9algorithm8mutation12__T4swapTAlZ4swapFNaNbNiNeKAlKAlZv
+_D3std9exception25__T11doesPointToTAlTAlTvZ11doesPointToFNaNbNiNeKxAlKxAlZb	230492	14388002	11882678
+	247812	_D3std5array14__T7overlapTvZ7overlapFNaNbNiNeANgvANgvZANgv
+------------------
+	199990	_Dmain
+	207285	 Timer Is 
+_D4test14__T7factorsTlZ7factorsFNaNbxlZAl	407275	1094563141	954323378
+	199976	_D3std9algorithm7sorting70__T4sortVAyaa5_61203c2062VE3std9algorithm8mutation12SwapStrategyi0TAlZ4sortFNaNbNiNfAlZS3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange
+	199976	_D3std5range37__T11SortedRangeTAlVAyaa5_61203c2062Z11SortedRange7releaseMFNaNbNiZAl
+------------------
+	49999	_Dmain
+_Dmain	49999	89490644649	-1023773632
+	   11	_D17FactorLookupTable17FactorLookupTable6__ctorMFxlZC17FactorLookupTable17FactorLookupTable
+	    6	_D3std5stdio38__T7writelnTS4core4time12TickDurationZ7writelnFNfS4core4time12TickDurationZv
+	199990	_D4test14__T7factorsTlZ7factorsFNaNbxlZAl
+------------------
+im	0	0	0
+------------------
+	0	0	0
+
+======== Timer Is 3579545 Ticks/Sec, Times are in Microsecs ========
+
+  Num          Tree        Func        Per
+  Calls        Time        Time        Call
+
+1656307 22706242767  9785927636        5908     void FactorLookupTable.FactorLookupTable.findFactors(const(long))
+1786329163  9307390467  8391657065           4     pure nothrow @nogc @safe long[] std.algorithm.searching.find!("a == b", long[], long).find(long[], long)
+1758431555 12777323925  3260142595           1     pure nothrow @nogc @safe bool std.algorithm.searching.canFind!().canFind!(long[], long).canFind(long[], long)
+7086410280   915733402   915733402           0     pure nothrow @nogc @safe bool std.functional.binaryFun!("a == b", "a", "b").binaryFun!(long, long).binaryFun(ref long, ref long)
+ 407275   305782757   266604660         654     pure nothrow long[] test.factors!(long).factors(const(long))
+1752154781   209851295   209851295           0     pure nothrow @property @nogc @safe bool std.range.primitives.empty!(long).empty(const(long[]))
+3351300   189018883   142991205          42     pure nothrow @safe long[] FactorLookupTable.FactorLookupTable.noDupes!(long).noDupes(const(long[]))
+ 219488    24715337    23456678         106     pure nothrow @nogc @safe void std.algorithm.sorting.__T23optimisticInsertionSortS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ.optimisticInsertionSort(long[])
+ 228208     5676076     5357557          23     pure nothrow @nogc @safe bool std.algorithm.sorting.__T8isSortedS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ.isSorted(long[])
+ 230492     4019505     3319605          14     pure nothrow @nogc @trusted bool std.exception.doesPointTo!(long[], long[], void).doesPointTo(ref const(long[]), ref const(long[]))
+ 226546    28253748     2107203           9     pure nothrow @nogc @safe void std.algorithm.sorting.__T13quickSortImplS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ.quickSortImpl(long[], ulong)
+10032634     1640364     1640364           0     pure nothrow @nogc @safe bool std.functional.binaryFun!("a < b", "a", "b").binaryFun!(long, long).binaryFun(ref long, ref long)
+ 199976    35444124      964755           4     pure nothrow @nogc @safe std.range.SortedRange!(long[], "a < b").SortedRange std.algorithm.sorting.sort!("a < b", 0, long[]).sort(long[])
+ 247812      699900      609762           2     pure nothrow @nogc @trusted inout(void)[] std.array.overlap!(void).overlap(inout(void)[], inout(void)[])
+ 199976      549544      311649           1     pure nothrow @nogc @safe std.range.SortedRange!(long[], "a < b").SortedRange std.range.assumeSorted!("a < b", long[]).assumeSorted(long[])
+ 199976     3543337      232284           1     pure nothrow @nogc long[] std.algorithm.mutation.move!(long[]).move(ref long[])
+ 199976     3733972      190635           0     pure nothrow @nogc long[] std.range.SortedRange!(long[], "a < b").SortedRange.release()
+ 199976      237895      182424           0     pure nothrow ref @nogc @safe std.range.SortedRange!(long[], "a < b").SortedRange std.range.SortedRange!(long[], "a < b").SortedRange.__ctor(long[])
+   7629      641042      168303          22     pure nothrow @nogc @trusted void std.algorithm.mutation.swap!(long[]).swap(ref long[], ref long[])
+     12      104138      104138        8678     _D3std5stdio4File17LockingTextWriter10__T3putTaZ3putMFNfaZ12trustedFPUTCFNbNiNeiPS4core4stdc5stdio8_IO_FILEZi
+  12454      113935      101656           8     pure nothrow @nogc @safe ulong std.algorithm.sorting.__T8getPivotS773std10functional49__T9binaryFunVAyaa5_61203c2062VAyaa1_61VAyaa1_62Z9binaryFunTAlZ.getPivot(long[])
+  98387      102456       80050           0     pure nothrow @nogc @safe void std.algorithm.mutation.swapAt!(long[]).swapAt(long[], ulong, ulong)
+ 199976       55471       55471           0     pure nothrow @nogc @safe void std.range.SortedRange!(long[], "a < b").SortedRange.dbgVerifySorted()
+     24       51023       51023        2125     _D3std5stdio4File17LockingTextWriter12__T3putTAyaZ3putMFAyaZ13trustedFwriteFNbNiNexPvmmPOS4core4stdc5stdio8_IO_FILEZm
+ 247812       49830       49830           0     pure nothrow @nogc @safe inout(void)* std.array.overlap!(void).overlap(inout(void)[], inout(void)[]).min(inout(void)*, inout(void)*)
+ 297814       40307       40307           0     pure nothrow @nogc @safe inout(void)* std.array.overlap!(void).overlap(inout(void)[], inout(void)[]).max(inout(void)*, inout(void)*)
+  98387       22405       22405           0     pure nothrow @nogc @trusted void std.algorithm.mutation.swap!(long).swap(ref long, ref long)
+  12460       21789       14865           1     pure nothrow @nogc @safe ulong std.algorithm.comparison.min!(ulong, ulong).min(ulong, ulong)
+     12      119428       13498        1124     @safe void std.stdio.File.write!(core.time.TickDuration, char).write(core.time.TickDuration, char)
+     18       11400        7911         439     @safe bool std.format.FormatSpec!(char).FormatSpec.writeUpToNextSpec!(std.stdio.File.LockingTextWriter).writeUpToNextSpec(std.stdio.File.LockingTextWriter)
+      6       42618        2999         499     @safe uint std.format.formattedWrite!(std.stdio.File.LockingTextWriter, char, core.time.TickDuration).formattedWrite(std.stdio.File.LockingTextWriter, const(char[]), core.time.TickDuration)
+     12        2862        2862         238     _D3std5stdio4File17LockingTextWriter12__T3putTAxaZ3putMFAxaZ13trustedFwriteFNbNiNexPvmmPOS4core4stdc5stdio8_IO_FILEZm
+      6        3169        2235         372     @safe void std.format.formatUnsigned!(std.stdio.File.LockingTextWriter, ulong, char).formatUnsigned(std.stdio.File.LockingTextWriter, ulong, ref std.format.FormatSpec!(char).FormatSpec, uint, bool)
+     12      121192        1763         146     @safe void std.stdio.writeln!(core.time.TickDuration).writeln(core.time.TickDuration)
+      6        4679        1111         185     @safe void std.format.formatValue!(std.stdio.File.LockingTextWriter, long, char).formatValue(std.stdio.File.LockingTextWriter, long, ref std.format.FormatSpec!(char).FormatSpec)
+     18       31785        1109          61     @safe void std.format.formatValue!(std.stdio.File.LockingTextWriter, core.time.TickDuration, char).formatValue(std.stdio.File.LockingTextWriter, ref core.time.TickDuration, ref std.format.FormatSpec!(char).FormatSpec)
+      6         537         537          89     _D3std5stdio4File17LockingTextWriter11__T3putTAaZ3putMFAaZ13trustedFwriteFNbNiNexPvmmPOS4core4stdc5stdio8_IO_FILEZm
+     24       51486         463          19     @safe void std.stdio.File.LockingTextWriter.put!(immutable(char)[]).put(immutable(char)[])
+      6        3567         398          66     @safe void std.format.formatIntegral!(std.stdio.File.LockingTextWriter, long, char).formatIntegral(std.stdio.File.LockingTextWriter, const(long), ref std.format.FormatSpec!(char).FormatSpec, uint, ulong)
+      6        5062         383          63     @safe void std.format.formatElement!(std.stdio.File.LockingTextWriter, long, char).formatElement(std.stdio.File.LockingTextWriter, ref long, ref std.format.FormatSpec!(char).FormatSpec)
+     15      104444         306          20     nothrow @nogc @safe void std.stdio.File.LockingTextWriter.put!(char).put(char)
+     12       32088         303          25     void std.format.formatGeneric!(std.stdio.File.LockingTextWriter, core.time.TickDuration, char).formatGeneric(std.stdio.File.LockingTextWriter, const(void)*, ref std.format.FormatSpec!(char).FormatSpec)
+     12        3161         298          24     @safe void std.stdio.File.LockingTextWriter.put!(const(char)[]).put(const(char)[])
+     12       51807         187          15     @safe void std.range.primitives.put!(std.stdio.File.LockingTextWriter, immutable(char)[]).put(ref std.stdio.File.LockingTextWriter, immutable(char)[])
+      6         712         175          29     @safe void std.stdio.File.LockingTextWriter.put!(char[]).put(char[])
+     12        3488         175          14     @safe void std.range.primitives.put!(std.stdio.File.LockingTextWriter, const(char)[]).put(ref std.stdio.File.LockingTextWriter, const(char)[])
+     12      104598         153          12     nothrow @nogc @safe void std.range.primitives.doPut!(std.stdio.File.LockingTextWriter, char).doPut(ref std.stdio.File.LockingTextWriter, ref char)
+     12        3313         152          12     @safe void std.range.primitives.doPut!(std.stdio.File.LockingTextWriter, const(char)[]).doPut(ref std.stdio.File.LockingTextWriter, ref const(char)[])
+      6      104747         148          24     nothrow @nogc @safe void std.range.primitives.put!(std.stdio.File.LockingTextWriter, char).put(ref std.stdio.File.LockingTextWriter, char)
+     24       51620         133           5     @safe void std.range.primitives.doPut!(std.stdio.File.LockingTextWriter, immutable(char)[]).doPut(ref std.stdio.File.LockingTextWriter, ref immutable(char)[])
+      6         934         112          18     @safe void std.range.primitives.put!(std.stdio.File.LockingTextWriter, char[]).put(ref std.stdio.File.LockingTextWriter, char[])
+      6         822         109          18     @safe void std.range.primitives.doPut!(std.stdio.File.LockingTextWriter, char[]).doPut(ref std.stdio.File.LockingTextWriter, ref char[])
+      6          56          56           9     pure @safe void std.format.enforceValidFormatSpec!(core.time.TickDuration, char).enforceValidFormatSpec(ref std.format.FormatSpec!(char).FormatSpec)
+      6          45          45           7     pure nothrow @nogc @trusted const(void*) std.format.formattedWrite!(std.stdio.File.LockingTextWriter, char, core.time.TickDuration).formattedWrite(std.stdio.File.LockingTextWriter, const(char[]), core.time.TickDuration).__lambda6!(core.time.TickDuration).__lambda6(ref core.time.TickDuration)
+      6           5           5           0     pure nothrow @nogc @trusted pure nothrow @safe void function(std.stdio.File.LockingTextWriter, const(void)*, ref std.format.FormatSpec!(char).FormatSpec)* std.format.formattedWrite!(std.stdio.File.LockingTextWriter, char, core.time.TickDuration).formattedWrite(std.stdio.File.LockingTextWriter, const(char[]), core.time.TickDuration).__lambda5()
+      1           0           0           0     
+      1           0           0           0     
+      1           0           0           0     
+      1           0           0           0     Tim
+      1           0           0           0      Timer Is 
+      1           0           0           0     Timer Is 3
+      1           0           0           0     Timer Is 3579545 T
+      1           0           0           0     Timer Is 3579545 Ticks/Sec, Times are in Microsecs ========
+      1           0           0           0     im
+      1           0           0           0     
+  49999 25000564219  -286006638   103063876     _Dmain
+     14 21934126473  -818601105368039869676     FactorLookupTable.FactorLookupTable FactorLookupTable.FactorLookupTable.__ctor(const(long))

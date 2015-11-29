@@ -1,16 +1,9 @@
 import std.stdio;
 import std.conv;
-import std.math;
-import std.functional;
-import std.array;
 import std.range;
-import std.random;
 import std.algorithm;
-
-bool isEven(long a)  nothrow pure @nogc @trusted
-{
-    return (a & 1) == 0;
-}
+import std.parallelism;
+import core.sync.mutex;
 
 long euclid_mod(long a, long b)  @nogc pure nothrow @trusted
 {
@@ -23,14 +16,28 @@ long euclid_mod(long a, long b)  @nogc pure nothrow @trusted
     return a;
 }
 
-real resilience(in long denominator) @safe pure @nogc
+real resilience(in long denominator)
 {
+
+    struct spaceRange {
+        long curr = 2;
+        @property auto empty(){return curr == denominator;}
+        @property auto front(){ return curr;}
+        auto popFront(){ curr++;}
+    };
+
+    auto mutex = new Mutex;
+
+    auto space = spaceRange();
     real ds = 1;
-    foreach(long i; 2..denominator)
+    foreach(long i; taskPool.parallel(space, 2))
     {
         if(euclid_mod(denominator, i) == 1)
         {
-            ds ++;
+                synchronized(mutex)
+                {
+                ds++;
+                }
         }
     }
 
@@ -39,26 +46,34 @@ real resilience(in long denominator) @safe pure @nogc
 
 void main()
 {
+
+    struct numRange{
+        immutable int increment = 30030;
+        long curr = 29099070;
+        int cnt = 0;
+        @property auto front() { return curr; }
+        @property bool empty() { return cnt == 10;}
+        auto popFront() {cnt ++;curr += increment;}
+    };
+
+    auto nums = numRange();
+
     static immutable real goalRd = 15499.0 / 94744.0;
-    immutable int denominator_increment = 30030;
-    long denominator = 9699690;
 
     real lowest_res = 2;
     real res;
 
-    do
+
+    foreach(long denominator; nums)
     {
         res = resilience(denominator);
 
         if(res < lowest_res)
         {
             lowest_res = res;
-            writeln(res, " " ,denominator);
         }
 
-        denominator += denominator_increment;
+        writeln(res, " " ,denominator);
+    }
 
-    } while(res > goalRd);
-
-    writeln(res);
 }

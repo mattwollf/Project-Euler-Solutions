@@ -37,10 +37,6 @@ int isPrintable(const char *text,size_t len)
                                 break;
                         case '#':
                         case '$':
-                        case '|':
-                        case '*':
-                        case '+':
-                        case '`':
                                 return 0;
                         default:
                                 break;

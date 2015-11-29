@@ -4,104 +4,92 @@
 #include <math.h>
 #include <limits.h>
 
-#include "sieve.h"
+#include "p51.h"
 
 char *sieve;
 size_t sieve_size;
 
 int ilen(int n)
 {
-        return floor(log10(abs(n))) + 1;
+    return floor(log10(abs(n))) + 1;
 }
 
 char *itoa(int n)
 {
-        char *str = NULL;
-        char *new_str = NULL;
+    char *str = NULL;
+    char *new_str = NULL;
 
-        str = malloc(sizeof(char) * 15);
+    str = malloc(sizeof(char) * 15);
 
-        int rc = sprintf(str, "%d", n);
+    int rc = sprintf(str, "%d", n);
 
-        new_str = realloc(str, rc);
+    new_str = realloc(str, rc);
 
-        if(new_str != NULL)
-        {
-                if(str != new_str)
-                        free(str);
+    if(new_str != NULL)
+    {
+        if(str != new_str)
+        free(str);
 
-                return new_str;
-        }
+        return new_str;
+    }
 
-        return str;
-}
-
-int find_primes(int n, int a, int b)
-{
-        char *n_str = itoa(n);
-
-        int n_family = 0;
-
-        int smallest_prime = INT_MAX;
-
-        for(int i = 0; i != 10; i++)
-        {
-                n_str[a] = n_str[b] = i + '0';
-
-                int test = atoi(n_str);
-
-                if(sieve[test])
-                {
-                        n_family++;
-
-                        if(smallest_prime > test)
-                                smallest_prime = test;
-                }
-        }
-
-        free(n_str);
-
-        if(n_family == 7)
-                return smallest_prime;
-
-        return -1;
-}
-
-int find_family(int n)
-{
-        const int len = ilen(n);
-
-        int rc;
-
-        for(int i = 0; i < len; i++)
-        {
-                for(int j = 0; i != len; i++)
-                {
-                        if(j == i) continue;
-
-                        rc = find_primes(n, i, j);
-
-                        if(rc != -1)
-                                printf("%d\n", rc);
-                }
-        }
-
-        return
+    return str;
 }
 
 int main(int argc, char *argv[])
 {
-        int curr_n;
+    int curr_n;
 
-        sieve_size = 1000000;
+    sieve_size = 1000000;
 
-        sieve = malloc(sizeof(char) * sieve_size);
+    sieve = malloc(sizeof(char) * sieve_size);
 
-        fill_prime_sieve(sieve, sieve_size);
+    char buf[50];
 
-        find_family(56003);
+    strcpy(buf, "56003");
+    reverse(buf);
+    size_t *indices = strndc(buf, '0');
 
-        free(sieve);
+    printf("%s\n",buf);
 
-        return 0;
+    fill_prime_sieve(sieve, sieve_size);
+
+    size_t cnt = strcnt(buf, '0');
+
+    printf("%d should be 2\n", cnt);
+
+    for(int i = 0; i < cnt; i++)
+    {
+        printf("0 found at %d\n", indices[i]);
+    }
+
+    free(sieve);
+
+    size_t** pset = malloc(sizeof(size_t *) * 8);
+
+    for(int i = 0; i != 8; i++)
+    {
+        pset[i] = malloc(sizeof(size_t) * 5);
+        memset(pset[i], -1, sizeof(size_t) * 5);
+    }
+
+    size_t test[3] = {1, 2, 3};
+
+    size_t setLength = powerset_wrapper(test, 3, pset);
+
+    int i = 0;
+    while(i < setLength)
+    {
+        int j = 0;
+        putchar('[');
+        while(pset[i][j] != -1)
+        {
+            printf(" %lu", pset[i][j]);
+            ++j;
+        }
+        fputs(" ]\n", stdout);
+        ++i;
+    }
+
+    return 0;
 }
